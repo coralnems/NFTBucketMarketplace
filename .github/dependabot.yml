@@ -1,0 +1,35 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    # Set versioning strategy
+    versioning-strategy: increase
+    # Add labels to pull requests
+    labels:
+      - "npm dependencies"
+      - "dependencies"
+    # Set review requirements
+    reviewers:
+      - "your-github-username"
+    # Configure commit message
+    commit-message:
+      prefix: "npm"
+      prefix-development: "dev"
+      include: "scope"
+    # Set update limits
+    open-pull-requests-limit: 10
+    # Define allowed updates
+    allow:
+      # Allow both direct and indirect updates for all packages
+      - dependency-type: "all"
+
+  # Add another entry for GitHub Actions if you use them
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "github-actions"
+      - "dependencies"
