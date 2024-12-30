@@ -1,0 +1,102 @@
+// Create New Button 
+.create-new-button
+    a.shadow-lg.btn.btn-warning(href="create-new.html", data-bs-toggle="tooltip", data-bs-placement="left", title="Create New NFT")
+        i.fz-18.bi.bi-plus-lg
+
+.admin-wrapper
+    .container
+        .row.g-4.justify-content-center
+            .col-12.col-lg-10.col-xl-9.col-xxl-8
+                ul.nav.nav-tabs.border-0.mb-3(role="tablist")
+                    li.nav-item
+                        a#tab--1.position-relative.nav-link.mb-0.rounded-pill.border-0.me-1.active(data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true") General
+                    li.nav-item
+                        a#tab--2.nav-link.mb-0.rounded-pill.border-0.me-1(data-bs-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false") Others
+
+                .tab-content
+                    // Tab Pane
+                    #tab1.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="tab--1")
+                        .card
+                            .card-body.p-4.p-sm-5
+                                form(action="#")
+                                    .row.g-4
+                                        .col-12
+                                            input.form-control.bg-gray.border-0(type="text", name="fullName", placeholder="Full Name")
+
+                                        .col-12
+                                            input.form-control.bg-gray.border-0(type="email", name="email", placeholder="Email Address")
+
+                                        .col-12
+                                            input.form-control.bg-gray.border-0(type="text", name="username", placeholder="Username")
+
+                                        .col-12
+                                            input.form-control.bg-gray.border-0(type="password", name="password", placeholder="Password")
+
+                                        .col-12
+                                            select.filter-select2.w-100.bg-gray
+                                                option(selected, value="1") Timezone
+                                                option(value="2") UTC +0
+                                                option(value="3") UTC +1
+                                                option(value="4") UTC +2
+                                                option(value="5") UTC +3
+                                                option(value="6") UTC +4
+                                                option(value="7") UTC +5
+                                                option(value="8") UTC +6
+                                                option(value="9") UTC +7
+                                                option(value="10") UTC +8
+                                                option(value="11") UTC +9
+                                                option(value="12") UTC +10
+
+                                        .col-12
+                                            select.filter-select.w-100.bg-gray
+                                                option(selected, value="1") Week starts on
+                                                option(value="2") Saturday
+                                                option(value="3") Sunday
+                                                option(value="4") Monday
+
+                                        .col-12
+                                            button.btn.btn-primary.w-100.rounded-pill(type="submit")
+                                                i.bi.bi-sd-card-fill.me-1
+                                                | Save changes
+
+                    // Tab Pane
+                    #tab2.tab-pane.fade(role="tabpanel" aria-labelledby="tab--2")
+                        .card
+                            .card-body.p-4.p-sm-5
+                                form(action="#")
+                                    .row.g-4
+                                        .col-12.col-md-4
+                                            .form-check
+                                                input.form-check-input#liveBids(type="checkbox", value="", checked)
+                                                label.form-check-label(for="liveBids") Live Bids
+
+                                        .col-12.col-md-4
+                                            .form-check
+                                                input.form-check-input#onSale(type="checkbox", value="")
+                                                label.form-check-label(for="onSale") On Sale
+
+                                        .col-12.col-md-4
+                                            .form-check
+                                                input.form-check-input#comingSoon(type="checkbox", value="")
+                                                label.form-check-label(for="comingSoon") Coming Soon
+
+                                        .col-12
+                                            .form-check.form-switch.mb-3
+                                                input.form-check-input#switch1(type="checkbox", role="switch")
+                                                label.form-check-label(for="switch1") Enable Notifications
+
+                                            .form-check.form-switch.mb-3
+                                                input.form-check-input#switch2(type="checkbox", role="switch", checked)
+                                                label.form-check-label(for="switch2") Enable Chats Sounds
+
+                                            .form-check.form-switch
+                                                input.form-check-input#switch3(type="checkbox", role="switch")
+                                                label.form-check-label(for="switch3") Enable Lazyload
+
+                                        .col-12
+                                            textarea.form-control(name="message", cols="10", rows="5", placeholder="Short Description")
+
+                                        .col-12
+                                            button.btn.btn-primary.w-100.rounded-pill(type="submit")
+                                                i.bi.bi-sd-card-fill.me-1
+                                                | Save changes

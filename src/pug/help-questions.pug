@@ -1,0 +1,121 @@
+doctype html
+html(lang="en", data-theme="dark")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header.pug
+
+        // Breadcrumb 
+        .breadcrumb-wrapper
+            .container
+                .breadcrumb-content
+                    h2.breadcrumb-title All Questions
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.justify-content-center
+                            li.breadcrumb-item
+                                a(href="index.html") Home
+                            li.breadcrumb-item.active(aria-current="page") Help Center
+        
+        .divider
+
+        .help-center-wrapper
+            .container
+                .row.justify-content-center
+                    .col-12.col-sm-9.col-lg-6
+                        .help-form.text-center
+                            h2.display-6.fw-bold.mb-4 How can I help you?
+                            // Form 
+                            form(action="#")
+                                input.form-control(type="search", placeholder="Write your question")
+                                button(type="submit")
+                                    i.bi.bi-search
+
+            .divider
+
+            .container
+                .row.g-5
+                    .col-12.col-lg-8
+                        h4.mb-4 All Questions
+
+                        .card.shadow-sm.mt-3
+                            .card-body.px-4
+                                a.d-block.fz-18.hover-primary(href="question-details.html") How do I create an account?
+
+                        .card.shadow-sm.mt-3
+                            .card-body.px-4
+                                a.d-block.fz-18.hover-primary(href="question-details.html") How do I sell an NFT?
+                        
+                        .card.shadow-sm.mt-3
+                            .card-body.px-4
+                                a.d-block.fz-18.hover-primary(href="question-details.html") How do I create an NFT?
+                        
+                        .card.shadow-sm.mt-3
+                            .card-body.px-4
+                                a.d-block.fz-18.hover-primary(href="question-details.html") Where can I find NFT sales?
+                        
+                        .card.shadow-sm.mt-3
+                            .card-body.px-4
+                                a.d-block.fz-18.hover-primary(href="question-details.html") How can I stay safe and protect my NFTs?
+
+                        .card.shadow-sm.mt-3
+                            .card-body.px-4
+                                a.d-block.fz-18.hover-primary(href="question-details.html") How do I create an account?
+
+                        .card.shadow-sm.mt-3
+                            .card-body.px-4
+                                a.d-block.fz-18.hover-primary(href="question-details.html") How do I sell an NFT?
+                        
+                        .card.shadow-sm.mt-3
+                            .card-body.px-4
+                                a.d-block.fz-18.hover-primary(href="question-details.html") How do I create an NFT?
+                        
+                        .card.shadow-sm.mt-3
+                            .card-body.px-4
+                                a.d-block.fz-18.hover-primary(href="question-details.html") Where can I find NFT sales?
+                        
+                        .card.shadow-sm.mt-3
+                            .card-body.px-4
+                                a.d-block.fz-18.hover-primary(href="question-details.html") How can I stay safe and protect my NFTs?
+
+                        .card.shadow-sm.mt-3
+                            .card-body.px-4
+                                a.d-block.fz-18.hover-primary(href="question-details.html") How do I create an account?
+
+                        .card.shadow-sm.mt-3
+                            .card-body.px-4
+                                a.d-block.fz-18.hover-primary(href="question-details.html") How do I sell an NFT?
+                        
+                        .card.shadow-sm.mt-3
+                            .card-body.px-4
+                                a.d-block.fz-18.hover-primary(href="question-details.html") How do I create an NFT?
+                        
+                        .card.shadow-sm.mt-3
+                            .card-body.px-4
+                                a.d-block.fz-18.hover-primary(href="question-details.html") Where can I find NFT sales?
+                        
+                        .card.shadow-sm.mt-3
+                            .card-body.px-4
+                                a.d-block.fz-18.hover-primary(href="question-details.html") How can I stay safe and protect my NFTs?
+                    
+                    .col-12.col-lg-4
+                        .card.bg-gray.border-0.mt-2
+                            .card-body.p-4
+                                h4.mb-3 Popular Questions
+                                .border-top.mb-3
+                                
+                                a.d-block.fz-16.hover-primary.mt-3(href="question-details.html") How do I create an account?
+                                a.d-block.fz-16.hover-primary.mt-3(href="question-details.html") How do I sell an NFT?
+                                a.d-block.fz-16.hover-primary.mt-3(href="question-details.html") How do I create an NFT?
+                                a.d-block.fz-16.hover-primary.mt-3(href="question-details.html") Where can I find NFT sales?
+                                a.d-block.fz-16.hover-primary.mt-3(href="question-details.html") How can I stay safe and protect my NFTs?
+        
+        .divider
+
+        include inc/dark-light-mode.pug
+
+        include inc/footer.pug
+
+        include inc/js-plugins.pug

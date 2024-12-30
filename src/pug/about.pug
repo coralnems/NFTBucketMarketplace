@@ -1,0 +1,103 @@
+doctype html
+html(lang="en", data-theme="dark")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header.pug
+
+        // Breadcrumb 
+        .breadcrumb-wrapper
+            .container
+                .breadcrumb-content
+                    h2.breadcrumb-title About Us
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.justify-content-center
+                            li.breadcrumb-item
+                                a(href="index.html") Home
+                            li.breadcrumb-item.active(aria-current="page") About
+
+        .divider
+
+        // About 
+        .about-area
+            .container
+                .row.g-4
+                    .col-12.col-sm-6.col-xl-3
+                        .card.about-card.shadow-sm
+                            .card-body.py-4
+                                .icon.bg-success
+                                    i.bi.bi-shield-fill-check
+                                h4.mb-3 Trustworthy
+                                p.mb-0 It's crafted with the latest trend of design &amp; coded with all modern approaches.
+
+                    .col-12.col-sm-6.col-xl-3
+                        .card.about-card.shadow-sm
+                            .card-body.py-4
+                                .icon.bg-primary
+                                    i.bi.bi-shield-lock
+                                h4.mb-3 Secure &amp; Safe
+                                p.mb-0 It's crafted with the latest trend of design &amp; coded with all modern approaches.
+
+                    .col-12.col-sm-6.col-xl-3
+                        .card.about-card.shadow-sm
+                            .card-body.py-4
+                                .icon.bg-info
+                                    i.bi.bi-people-fill
+                                h4.mb-3 Loyal Customer
+                                p.mb-0 It's crafted with the latest trend of design &amp; coded with all modern approaches.
+
+                    .col-12.col-sm-6.col-xl-3
+                        .card.about-card.shadow-sm
+                            .card-body.py-4
+                                .icon.bg-danger
+                                    i.bi.bi-wallet2
+                                h4.mb-3 Easy Wallet
+                                p.mb-0 It's crafted with the latest trend of design &amp; coded with all modern approaches.
+
+            .divider
+
+            .container
+                .row.g-4.g-xl-5.align-items-center.justify-content-between
+                    .col-12.col-lg-7.col-xl-6
+                        h2.h2.fw-bold.mb-3 Digital arts are trends now. Welcome to the world of NFTs.
+                        p.fz-18 It's crafted with the latest trend of design &amp; coded with all modern approaches. It's a robust &amp; multi-dimensional usable template.
+                        a.btn.btn-primary.rounded-pill.mt-4(href="#") Know More
+
+                    .col-12.col-lg-5
+                        img.rounded(src="img/illustrator/4.png", alt="")
+
+            .divider
+
+            include inc/cta.pug
+
+            .divider
+
+            .container
+                .row.g-4.g-xl-5.align-items-center.justify-content-between
+                    .col-12.col-lg-5
+                        img.rounded(src="img/illustrator/4.png", alt="")
+
+                    .col-12.col-lg-7.col-xl-6
+                        h2.h2.fw-bold.mb-3 Explore, buy, and sell exceptional NFTs.
+                        p.fz-18 It's crafted with the latest trend of design &amp; coded with all modern approaches. It's a robust &amp; multi-dimensional usable template.
+                        p.fz-18 It's crafted with the latest trend of design &amp; coded with all modern approaches. It's a robust &amp; multi-dimensional usable template.
+                        a.btn.btn-primary.rounded-pill.mt-4(href="#") Explore
+        
+        .divider
+
+        include inc/counter.pug
+
+        .divider
+
+        include inc/testimonial.pug
+
+        .divider
+
+        include inc/dark-light-mode.pug
+
+        include inc/footer.pug
+
+        include inc/js-plugins.pug

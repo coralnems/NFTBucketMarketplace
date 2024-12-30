@@ -1,0 +1,202 @@
+doctype html
+html(lang="en", data-theme="dark")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header.pug
+
+        // Breadcrumb 
+        .breadcrumb-wrapper
+            .container
+                .breadcrumb-content
+                    h2.breadcrumb-title Ranking
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.justify-content-center
+                            li.breadcrumb-item
+                                a(href="index.html") Home
+                            li.breadcrumb-item.active(aria-current="page") Ranking
+
+        .divider
+
+        .activity-wrapper
+            .container
+                .row.g-4.justify-content-between
+                    .col-12.col-sm-6.col-lg-3
+                        form(action="#") 
+                            input.form-control(type="search", placeholder="Search")
+
+                    .col-12.col-sm-6.col-lg-3
+                        select.filter-select.bg-gray.w-100
+                            option(selected, value="1") All Time
+                            option(value="2") Last 1 Day
+                            option(value="3") Last 7 Days
+                            option(value="4") Last 15 Days
+                            option(value="5") Last 1 Month
+                            option(value="6") Last 1 Year
+
+            .mt-4.d-block.w-100
+
+            .container
+                .table-responsive.border.shadow-sm.ranking-table.mb-70
+                    table.table.mb-0
+                        thead
+                            tr
+                                th(scope="col") Position
+                                th(scope="col") Title
+                                th(scope="col") Base Price
+                                th(scope="col") 
+                                    | Last 1 Day
+                                    i.ms-1.bi.bi-arrow-down-up
+                                th(scope="col") 
+                                    | 7 Days
+                                    i.ms-1.bi.bi-arrow-down-up
+
+                        tbody
+                            tr
+                                th(scope="row") #1
+                                td 
+                                    a.btn.btn-minimal.text-dark.hover-primary.fw-bold(href="#") Monkey Arts
+                                td
+                                    span.d-inline-block
+                                        i.bi.bi-currency-dollar
+                                        | 4035
+                                td
+                                    span.text-success +1.065%
+                                td
+                                    span.text-danger -0.75%
+                            tr
+                                th(scope="row") #2
+                                td 
+                                    a.btn.btn-minimal.text-dark.hover-primary.fw-bold(href="#") Kings with Bitcoin
+                                td
+                                    span.d-inline-block
+                                        i.bi.bi-currency-dollar
+                                        | 3978
+                                td
+                                    span.text-success +1.065%
+                                td
+                                    span.text-success +0.75%
+                            tr
+                                th(scope="row") #3
+                                td 
+                                    a.btn.btn-minimal.text-dark.hover-primary.fw-bold(href="#") Pixel Plane
+                                td
+                                    span.d-inline-block
+                                        i.bi.bi-currency-dollar
+                                        | 3245
+                                td
+                                    span.text-danger -1.065%
+                                td
+                                    span.text-danger -0.75%
+                            tr
+                                th(scope="row") #4
+                                td 
+                                    a.btn.btn-minimal.text-dark.hover-primary.fw-bold(href="#") Macaw Bird
+                                td
+                                    span.d-inline-block
+                                        i.bi.bi-currency-dollar
+                                        | 3122
+                                td
+                                    span.text-success +1.065%
+                                td
+                                    span.text-danger -0.75%
+                            tr
+                                th(scope="row") #5
+                                td 
+                                    a.btn.btn-minimal.text-dark.hover-primary.fw-bold(href="#") Sculpture Human Face
+                                td
+                                    span.d-inline-block
+                                        i.bi.bi-currency-dollar
+                                        | 2987
+                                td
+                                    span.text-success +1.065%
+                                td
+                                    span.text-success +0.75%
+                            tr
+                                th(scope="row") #6
+                                td 
+                                    a.btn.btn-minimal.text-dark.hover-primary.fw-bold(href="#") Monkey Arts
+                                td
+                                    span.d-inline-block
+                                        i.bi.bi-currency-dollar
+                                        | 2574
+                                td
+                                    span.text-success +1.065%
+                                td
+                                    span.text-danger -0.75%
+                            tr
+                                th(scope="row") #7
+                                td 
+                                    a.btn.btn-minimal.text-dark.hover-primary.fw-bold(href="#") Kings with Bitcoin
+                                td
+                                    span.d-inline-block
+                                        i.bi.bi-currency-dollar
+                                        | 2347
+                                td
+                                    span.text-success +1.065%
+                                td
+                                    span.text-success +0.75%
+                            tr
+                                th(scope="row") #8
+                                td 
+                                    a.btn.btn-minimal.text-dark.hover-primary.fw-bold(href="#") Pixel Plane
+                                td
+                                    span.d-inline-block
+                                        i.bi.bi-currency-dollar
+                                        | 2102
+                                td
+                                    span.text-success +1.065%
+                                td
+                                    span.text-danger -0.75%
+                            tr
+                                th(scope="row") #9
+                                td 
+                                    a.btn.btn-minimal.text-dark.hover-primary.fw-bold(href="#") Macaw Bird
+                                td
+                                    span.d-inline-block
+                                        i.bi.bi-currency-dollar
+                                        | 1875
+                                td
+                                    span.text-danger +1.065%
+                                td
+                                    span.text-success -0.75%
+                            tr
+                                th(scope="row") #10
+                                td 
+                                    a.btn.btn-minimal.text-dark.hover-primary.fw-bold(href="#") Sculpture Human Face
+                                td
+                                    span.d-inline-block
+                                        i.bi.bi-currency-dollar
+                                        | 1874
+                                td
+                                    span.text-success +1.065%
+                                td
+                                    span.text-danger -0.75%
+
+            // Pagination             
+            .funto-pagination
+                nav(aria-label="Page navigation example")
+                    ul.pagination.justify-content-center.mb-0
+                        li.page-item.active
+                            a.page-link(href="#") 1
+                        li.page-item
+                            a.page-link(href="#") 2
+                        li.page-item
+                            a.page-link(href="#") 3
+                        li.page-item
+                            a.page-link(href="#") 4
+                        li.page-item
+                            a.page-link(href="#") ...
+                        li.page-item
+                            a.page-link(href="#") 9
+
+        .divider
+
+        include inc/dark-light-mode.pug
+
+        include inc/footer.pug
+
+        include inc/js-plugins.pug

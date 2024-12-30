@@ -1,0 +1,179 @@
+doctype html
+html(lang="en", data-theme="dark")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header.pug
+
+        // Breadcrumb 
+        .breadcrumb-wrapper
+            .container
+                .breadcrumb-content
+                    h2.breadcrumb-title Item Details
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.justify-content-center
+                            li.breadcrumb-item
+                                a(href="index.html") Home
+                            li.breadcrumb-item.active(aria-current="page") Item Details
+
+        .divider
+
+        // Share Modal 
+        .share-modal.modal.fade#shareModal(tabindex="-1", aria-labelledby="shareModalLabel", aria-hidden="true")
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                    .modal-body.p-4.text-center
+                        h4.mb-4#shareModalLabel Share this item
+
+                        .d-flex.align-items-center.justify-content-center
+                            a.mx-2(href="#")
+                                img(src="img/core-img/icons8-facebook.svg", alt="")                            
+                            a.mx-2(href="#")
+                                img(src="img/core-img/icons8-twitter.svg", alt="")
+                            a.mx-2(href="#")
+                                img(src="img/core-img/icons8-instagram.svg", alt="")
+                            a.mx-2(href="#")
+                                img(src="img/core-img/icons8-slack.svg", alt="")
+                            a.mx-2(href="#")
+                                img(src="img/core-img/icons8-player.svg", alt="")
+
+                        button.btn.btn-danger.btn-sm.rounded-pill.mt-4(type="button", data-bs-dismiss="modal", aria-label="Close")
+                            i.me-1.bi.bi-x-lg
+                            | Close
+
+        // Copy Link Modal 
+        .share-modal.modal.fade#copylinkModal(tabindex="-1", aria-labelledby="copylinkLabel", aria-hidden="true")
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                    .modal-body.p-4.text-center
+                        h4.mb-4#copylinkLabel Copy item link
+
+                        p.user-select-all.mb-0.border.border-2.p-3.rounded https://themeforest.net/item/affan-pwa-mobile-html-template/29715548
+
+                        button.btn.btn-danger.btn-sm.rounded-pill.mt-4(type="button", data-bs-dismiss="modal", aria-label="Close")
+                            i.me-1.bi.bi-x-lg
+                            | Close
+
+        // Report Modal 
+        .share-modal.modal.fade#reportModal(tabindex="-1", aria-labelledby="reportModalLabel", aria-hidden="true")
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                    .modal-body.p-4.text-center
+                        h4.mb-4#reportModalLabel Why are you reporting?
+
+                        form(action="#")
+                            textarea.form-control.mb-3#reportText(name="reportMessage", placeholder="Write your complaint...")
+
+                            .d-flex.align-items-center.justify-content-between
+                                button.btn.btn-danger.btn-sm.rounded-pill(type="button", data-bs-dismiss="modal", aria-label="Close")
+                                    i.me-1.bi.bi-x-lg
+                                    | Close
+                                button.btn.btn-primary.btn-sm.rounded-pill(type="submit") Report
+
+        // Item Details 
+        .item-details-wrap
+            .container
+                .row.g-4.g-lg-5.justify-content-center
+                    .col-12.col-md-12.col-lg-6
+                        .item-big-thumb
+                            img(src="img/bg-img/4.jpg", alt="", data-action="zoom")
+
+                    // Item Details Content 
+                    .col-12.col-md-9.col-lg-6
+                        .item-details-content.mt-5.mt-lg-0
+                            .dropdown.item-details-dd
+                                button.dropdown-toggle#dwd987(type="button", data-bs-toggle="dropdown", aria-expanded="false")
+                                    i.bi.bi-three-dots-vertical
+
+                                // Dropdown Menu 
+                                ul.dropdown-menu.dropdown-menu-end(aria-labelledby="dwd987")
+                                    li
+                                        a.dropdown-item(href="#", data-bs-toggle="modal", data-bs-target="#shareModal")
+                                            i.me-1.bi.bi-share
+                                            | Share
+                                    li
+                                        a.dropdown-item(href="#", data-bs-toggle="modal", data-bs-target="#copylinkModal")
+                                            i.me-1.bi.bi-box-arrow-up-right
+                                            | Copy Link
+                                    li
+                                        a.dropdown-item(href="#", data-bs-toggle="modal", data-bs-target="#reportModal")
+                                            i.me-1.bi.bi-flag
+                                            | Report
+
+                            .d-flex.flex-wrap.align-items-center
+                                // Wishlist 
+                                button.btn.btn-dark.btn-sm.rounded-pill.px-3.wishlist-btn(type="button")
+                                    i.bi
+                                    span.ms-1 98
+
+                                // Badge
+                                .badge.border.px-3.py-2.rounded-pill.text-dark.fz-14.d-inline-block.ms-1.ms-sm-4
+                                    i.me-1.bi.bi-eye
+                                    | 8,634 people views this
+
+                            h2.my-3 Diamond Horse Animals #47
+
+                            .d-flex.align-items-center.mb-4
+                                .author-img.position-relative.me-3
+                                    img.shadow(src="img/bg-img/u3.jpg", alt="")
+                                    i.bi.bi-check.position-absolute.bg-primary
+                                .name-author
+                                    span.d-block.fz-14 Created by
+                                    a.author.d-block.fz-16.hover-primary.text-truncate(href="#") @creative_world
+
+                            .border-top.w-75.mb-4
+
+                            // Bid End 
+                            p.lh-1 Bid ending soon
+                            .bid-ends.mb-4(data-date="December 31, 2025 14:19:39")
+                                div
+                                    span.days
+                                    span Days
+                                div
+                                    span.hours
+                                    span Hours
+                                div
+                                    span.minutes
+                                    span Min
+                                div
+                                    span.seconds
+                                    span Sec
+
+                            .row.align-items-end
+                                .col-6.col-sm-4
+                                    p.mb-2 Floor price
+                                    h5.text-center.mb-0.border.border-2.px-3.py-2.border-primary.d-inline-block.rounded.text-primary.w-100 7.803 ETH 
+
+                                .col-6.col-sm-4.col-lg-5
+                                    a.btn.btn-primary.rounded-pill.w-100(href="#")
+                                        img.me-1(src="img/core-img/fire.png", alt="")
+                                        | Place a bid
+
+                            .border-top.w-75.my-4
+
+                            .short-description
+                                h5 Short Description
+                                p.mb-0 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut veniam consectetur magnam libero, natus eius numquam reprehenderit hic at, excepturi repudiandae magni optio odio doloribus?
+
+        .d-block.w-100.mb-70
+
+        include inc/tab.pug
+
+        .divider
+
+        include inc/related-items.pug
+
+        .divider
+
+        include inc/cta.pug
+
+        .divider
+
+        include inc/dark-light-mode.pug
+
+        include inc/footer.pug
+
+        include inc/js-plugins.pug

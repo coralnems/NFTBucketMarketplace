@@ -1,0 +1,64 @@
+doctype html
+html(lang="en", data-theme="dark")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header.pug
+
+        // Breadcrumb 
+        .breadcrumb-wrapper
+            .container
+                .breadcrumb-content
+                    h2.breadcrumb-title Log In
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.justify-content-center
+                            li.breadcrumb-item
+                                a(href="index.html") Home
+                            li.breadcrumb-item.active(aria-current="page") Log In
+
+        .divider
+
+        // Register 
+        .register-area
+            .container
+                .row.g-4.g-lg-5.align-items-center.justify-content-between
+                    .col-12.col-md-6.col-xl-5
+                        .register-card
+                            h2 Welcome Back!
+                            p Didn't have an account?
+                                a.ms-1.hover-primary(href="register.html") Register now!
+
+                            // Register Form 
+                            .register-form.mt-5
+                                form(action="#" method="post")
+                                    .form-group.mb-4
+                                        input.form-control(type="email" placeholder="Email Address" required)
+
+                                    .form-group.mb-4
+                                        label.label-psswd(for="registerPassword") Show
+                                        input.form-control#registerPassword(type="password" placeholder="Password" required)
+
+                                    button.btn.btn-success.w-100(type="submit") Log In
+
+                                .login-meta-data.d-flex.align-items-center.justify-content-between
+                                    .form-check.mt-4
+                                        input.form-check-input#rememberMe(type="checkbox", value="", checked)
+                                        label.form-check-label(for="rememberMe") Keep me logged in
+
+                                    a.forgot-password.mt-4.text-primary.fz-16(href="forget-password.html") Forgot Password?
+                    
+                    // Thumbnail 
+                    .col-12.col-md-6
+                        .register-thumbnail.mt-5.mt-md-0
+                            img(src="img/illustrator/4.png" alt="")
+
+        .divider
+
+        include inc/dark-light-mode.pug
+
+        include inc/footer.pug
+
+        include inc/js-plugins.pug

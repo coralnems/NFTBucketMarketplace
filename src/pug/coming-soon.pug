@@ -1,0 +1,36 @@
+doctype html
+html(lang="en", data-theme="dark")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        // Wrap 
+        .coming-soon-wrapper.bg-img.bg-overlay(style="background-image: url('img/bg-img/1.jpg')")
+            .cs-content.w-100
+                .container
+                    .row.justify-content-center
+                        .col-12.col-lg-8
+                            .logo.mb-5
+                                img(src="img/core-img/logo-white.png", alt="")
+                            // Countdown 
+                            .bid-ends(data-date="March 31, 2025 14:19:54")
+                                div
+                                    span.days
+                                    span Days
+                                div
+                                    span.hours
+                                    span Hours
+                                div
+                                    span.minutes
+                                    span Min
+                                div
+                                    span.seconds
+                                    span Sec
+                            
+                            h2.display-4.mb-4.fw-bold Coming Soon
+                            p.mb-4 Build an excellent NFTs website with Funto.
+                            a.btn.btn-primary.btn-sm.rounded-pill(href="index.html") View Status
+
+        include inc/js-plugins.pug

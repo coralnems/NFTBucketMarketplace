@@ -1,0 +1,66 @@
+doctype html
+html(lang="en", data-theme="dark")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header.pug
+
+        // Breadcrumb 
+        .breadcrumb-wrapper
+            .container
+                .breadcrumb-content
+                    h2.breadcrumb-title Register
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.justify-content-center
+                            li.breadcrumb-item
+                                a(href="index.html") Home
+                            li.breadcrumb-item.active(aria-current="page") Register
+
+        .divider
+
+        // Register 
+        .register-area
+            .container
+                .row.g-4.g-lg-5.align-items-center.justify-content-between
+                    .col-12.col-md-6.col-xl-5
+                        .register-card
+                            h2 Create your free account
+                            p Already have an account?
+                                a.ms-1.hover-primary(href="login.html") Log In
+
+                            // Register Form
+                            .register-form.mt-5
+                                form(action="#" method="post")
+                                    .form-group.mb-4
+                                        input.form-control(type="email" placeholder="Email" required)
+
+                                    .form-group.mb-4
+                                        input.form-control(type="text" placeholder="Username" required)
+
+                                    .form-group.mb-4
+                                        input.form-control(type="text" placeholder="Full Name" required)
+
+                                    .form-group.mb-4
+                                        label.label-psswd(for="registerPassword") Show
+                                        input.form-control#registerPassword(type="password" placeholder="Password" required)
+
+                                    .form-check.mb-4
+                                        input.form-check-input#rememberMe(type="checkbox", value="", checked)
+                                        label.form-check-label(for="rememberMe") I agree to all terms &amp; conditions.
+
+                                    button.btn.btn-primary.w-100(type="submit") Register Now
+
+                    .col-12.col-md-6
+                        .register-thumbnail.mt-5.mt-md-0
+                            img(src="img/illustrator/4.png" alt="")
+        
+        .divider
+
+        include inc/dark-light-mode.pug
+
+        include inc/footer.pug
+
+        include inc/js-plugins.pug

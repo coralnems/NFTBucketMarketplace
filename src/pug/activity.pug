@@ -1,0 +1,212 @@
+doctype html
+html(lang="en", data-theme="dark")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header.pug
+
+        // Breadcrumb 
+        .breadcrumb-wrapper
+            .container
+                .breadcrumb-content
+                    h2.breadcrumb-title Activity
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.justify-content-center
+                            li.breadcrumb-item
+                                a(href="index.html") Home
+                            li.breadcrumb-item.active(aria-current="page") Activity
+
+        .divider
+
+        .activity-wrapper
+            .container
+                .row.g-4.justify-content-between
+                    .col-12.col-sm-6.col-lg-3
+                        form(action="#") 
+                            input.form-control(type="search", placeholder="Search")
+
+                    .col-12.col-sm-6.col-lg-3
+                        select.filter-select.bg-gray.w-100
+                            option(selected, value="1") All
+                            option(value="2") Purchase
+                            option(value="3") Offer
+                            option(value="4") Auctions
+
+            .mt-4.d-block.w-100
+
+            .container
+                .table-responsive.border.shadow-sm.activity-table.mb-70
+                    table.table.mb-0
+                        thead
+                            tr
+                                th(scope="col") Item
+                                th(scope="col") Price
+                                th(scope="col") Author
+                                th(scope="col") Event
+                                th(scope="col") Time
+
+                        tbody
+                            tr
+                                th(scope="row")
+                                    a.btn.btn-minimal.text-dark.hover-primary(href="item-details.html") 
+                                        img.rounded.me-1(src="img/bg-img/5.jpg", alt="")
+                                        | NFT Logo
+                                td 
+                                    span.d-inline-block.fw-bold.fz-14 0.235 ETH
+                                td
+                                    a.btn.btn-minimal.text-dark.hover-primary(href="author.html")
+                                        img.rounded-pill.me-1(src="img/bg-img/u1.jpg", alt="")
+                                        | @creative_art
+                                td
+                                    i.bi.bi-cart
+                                    | Sales
+                                td
+                                    i.bi.bi-clock
+                                    | 29 min ago
+                            tr
+                                th(scope="row")
+                                    a.btn.btn-minimal.text-dark.hover-primary(href="item-details.html") 
+                                        img.rounded.me-1(src="img/bg-img/6.jpg", alt="")
+                                        | Pixel Art
+                                td 
+                                    span.d-inline-block.fw-bold.fz-14 0.706 ETH
+                                td
+                                    a.btn.btn-minimal.text-dark.hover-primary(href="author.html")
+                                        img.rounded-pill.me-1(src="img/bg-img/u2.jpg", alt="")
+                                        | @designing_world
+                                td
+                                    i.bi.bi-percent
+                                    | Offer
+                                td
+                                    i.bi.bi-clock
+                                    | 1h ago
+                            tr
+                                th(scope="row")
+                                    a.btn.btn-minimal.text-dark.hover-primary(href="item-details.html") 
+                                        img.rounded.me-1(src="img/bg-img/7.jpg", alt="")
+                                        | Funny Pigs
+                                td 
+                                    span.d-inline-block.fw-bold.fz-14 0.105 ETH
+                                td
+                                    a.btn.btn-minimal.text-dark.hover-primary(href="author.html")
+                                        img.rounded-pill.me-1(src="img/bg-img/u3.jpg", alt="")
+                                        | @art_world
+                                td
+                                    i.bi.bi-patch-exclamation
+                                    | Alert
+                                td
+                                    i.bi.bi-clock
+                                    | 2h ago
+                            tr
+                                th(scope="row")
+                                    a.btn.btn-minimal.text-dark.hover-primary(href="item-details.html") 
+                                        img.rounded.me-1(src="img/bg-img/8.jpg", alt="")
+                                        | Fancy Car 2
+                                td 
+                                    span.d-inline-block.fw-bold.fz-14 0.95 ETH
+                                td
+                                    a.btn.btn-minimal.text-dark.hover-primary(href="author.html")
+                                        img.rounded-pill.me-1(src="img/bg-img/u4.jpg", alt="")
+                                        | @fancy_car
+                                td
+                                    i.bi.bi-cart
+                                    | Sales
+                                td
+                                    i.bi.bi-clock
+                                    | 3h ago
+                            tr
+                                th(scope="row")
+                                    a.btn.btn-minimal.text-dark.hover-primary(href="item-details.html") 
+                                        img.rounded.me-1(src="img/bg-img/5.jpg", alt="")
+                                        | NFT Logo
+                                td 
+                                    span.d-inline-block.fw-bold.fz-14 0.235 ETH
+                                td
+                                    a.btn.btn-minimal.text-dark.hover-primary(href="author.html")
+                                        img.rounded-pill.me-1(src="img/bg-img/u1.jpg", alt="")
+                                        | @creative_art
+                                td
+                                    i.bi.bi-cart
+                                    | Sales
+                                td
+                                    i.bi.bi-clock
+                                    | 12h ago
+                            tr
+                                th(scope="row")
+                                    a.btn.btn-minimal.text-dark.hover-primary(href="item-details.html") 
+                                        img.rounded.me-1(src="img/bg-img/6.jpg", alt="")
+                                        | Pixel Art
+                                td 
+                                    span.d-inline-block.fw-bold.fz-14 0.706 ETH
+                                td
+                                    a.btn.btn-minimal.text-dark.hover-primary(href="author.html")
+                                        img.rounded-pill.me-1(src="img/bg-img/u2.jpg", alt="")
+                                        | @designing_world
+                                td
+                                    i.bi.bi-percent
+                                    | Offer
+                                td
+                                    i.bi.bi-clock
+                                    | 17h ago
+                            tr
+                                th(scope="row")
+                                    a.btn.btn-minimal.text-dark.hover-primary(href="item-details.html") 
+                                        img.rounded.me-1(src="img/bg-img/7.jpg", alt="")
+                                        | Funny Pigs
+                                td 
+                                    span.d-inline-block.fw-bold.fz-14 0.105 ETH
+                                td
+                                    a.btn.btn-minimal.text-dark.hover-primary(href="author.html")
+                                        img.rounded-pill.me-1(src="img/bg-img/u3.jpg", alt="")
+                                        | @art_world
+                                td
+                                    i.bi.bi-patch-exclamation
+                                    | Alert
+                                td
+                                    i.bi.bi-clock
+                                    | 1d ago
+                            tr
+                                th(scope="row")
+                                    a.btn.btn-minimal.text-dark.hover-primary(href="item-details.html") 
+                                        img.rounded.me-1(src="img/bg-img/8.jpg", alt="")
+                                        | Fancy Car 2
+                                td 
+                                    span.d-inline-block.fw-bold.fz-14 0.95 ETH
+                                td
+                                    a.btn.btn-minimal.text-dark.hover-primary(href="author.html")
+                                        img.rounded-pill.me-1(src="img/bg-img/u4.jpg", alt="")
+                                        | @fancy_car
+                                td
+                                    i.bi.bi-cart
+                                    | Sales
+                                td
+                                    i.bi.bi-clock
+                                    | 3d ago
+
+            // Pagination             
+            .funto-pagination
+                nav(aria-label="Page navigation example")
+                    ul.pagination.justify-content-center.mb-0
+                        li.page-item.active
+                            a.page-link(href="#") 1
+                        li.page-item
+                            a.page-link(href="#") 2
+                        li.page-item
+                            a.page-link(href="#") 3
+                        li.page-item
+                            a.page-link(href="#") 4
+                        li.page-item
+                            a.page-link(href="#") ...
+                        li.page-item
+                            a.page-link(href="#") 9
+
+        .divider
+
+        include inc/dark-light-mode.pug
+
+        include inc/footer.pug
+
+        include inc/js-plugins.pug

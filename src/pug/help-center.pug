@@ -1,0 +1,83 @@
+doctype html
+html(lang="en", data-theme="dark")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header.pug
+
+        // Breadcrumb 
+        .breadcrumb-wrapper
+            .container
+                .breadcrumb-content
+                    h2.breadcrumb-title Help Center
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.justify-content-center
+                            li.breadcrumb-item
+                                a(href="index.html") Home
+                            li.breadcrumb-item.active(aria-current="page") Help
+
+        .divider
+
+        .help-center-wrapper
+            .container
+                .row.justify-content-center
+                    .col-12.col-sm-9.col-lg-6
+                        .help-form.text-center
+                            h2.display-6.fw-bold.mb-4 How can I help you?
+                            // Form 
+                            form(action="#")
+                                input.form-control(type="search", placeholder="Write your question")
+                                button(type="submit")
+                                    i.bi.bi-search
+
+                h5.my-5.text-center Or Browse Catagories
+
+            .container
+                .row.g-4.justify-content-center
+
+                    // Single Catagory 
+                    .col-12.col-sm-6.col-lg-5.col-xl-3
+                        .card.support-catagory-card.shadow-sm.text-center
+                            .card-body.py-5.px-4
+                                a.d-block(href="help-questions.html")
+                                    img.mb-4(src="img/core-img/folders.png", alt="")
+                                    h6.mb-1 Getting Started
+                                    span 75 Resources
+
+                    // Single Catagory 
+                    .col-12.col-sm-6.col-lg-5.col-xl-3
+                        .card.support-catagory-card.shadow-sm.text-center
+                            .card-body.py-5.px-4
+                                a.d-block(href="help-questions.html")
+                                    img.mb-4(src="img/core-img/pie-chart.png", alt="")
+                                    h6.mb-1 Usage Guides
+                                    span 113 Resources
+
+                    // Single Catagory 
+                    .col-12.col-sm-6.col-lg-5.col-xl-3
+                        .card.support-catagory-card.shadow-sm.text-center
+                            .card-body.py-5.px-4
+                                a.d-block(href="help-questions.html")
+                                    img.mb-4(src="img/core-img/licensing.png", alt="")
+                                    h6.mb-1 Licenses
+                                    span 14 Resources
+
+                    // Single Catagory 
+                    .col-12.col-sm-6.col-lg-5.col-xl-3
+                        .card.support-catagory-card.shadow-sm.text-center
+                            .card-body.py-5.px-4
+                                a.d-block(href="help-questions.html")
+                                    img.mb-4(src="img/core-img/law.png", alt="")
+                                    h6.mb-1 Copyright Infringement
+                                    span 8 Resources
+        
+        .divider
+
+        include inc/dark-light-mode.pug
+
+        include inc/footer.pug
+
+        include inc/js-plugins.pug

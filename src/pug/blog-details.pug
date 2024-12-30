@@ -1,0 +1,140 @@
+doctype html
+html(lang="en", data-theme="dark")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header.pug
+
+        // Breadcrumb 
+        .breadcrumb-wrapper
+            .container
+                .breadcrumb-content
+                    h2.breadcrumb-title Blog Details
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.justify-content-center
+                            li.breadcrumb-item
+                                a(href="index.html") Home
+                            li.breadcrumb-item.active(aria-current="page") Blog Details
+
+        .divider
+
+        // Blog Details  
+        .blog-details-wrap
+            .container
+                .row.justify-content-center
+                    .col-10
+                        .text-center
+                            h1.display-5.fw-bold.mb-4 The beginner’s guide to creating &amp; selling digital art NFTs.
+                            .post-date.border.border-2.border-info.rounded.px-2.py-1.d-inline-block.fz-14 Oct 19, 2022
+
+                        .mb-5
+
+                    .col-12
+                        img.mb-5(src="img/bg-img/44.jpg", alt="", data-action="zoom")
+
+                    .col-10
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, animi, numquam. Nam suscipit iste enim deleniti vitae facere earum doloribus, tempora alias quas voluptatibus aut, voluptates qui nihil, quisquam quos.
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quibusdam, nam porro cupiditate itaque doloribus commodi aut mollitia repellendus. Cum consequuntur nihil, itaque numquam aspernatur nisi quo soluta tempora rem?
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tempore officia, ab, pariatur harum quae cupiditate quia nisi atque qui tempora quis neque, molestiae doloribus repudiandae excepturi cum vero similique, aliquid laboriosam. Tempore vitae, quod rem architecto eum a dolores eveniet dolor aperiam hic alias suscipit, animi.
+
+                        h2.mb-3 10 tips for avoiding scams and staying safe.
+
+                        p.mb-4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente enim eligendi natus ratione, quia, illo reiciendis voluptas nostrum expedita eum libero. Officiis sapiente non, totam numquam dolor. Dolores qui impedit voluptatem accusamus odio modi mollitia reiciendis quod tenetur accusantium optio soluta excepturi adipisci quidem nobis, totam reprehenderit consectetur omnis, nemo ea voluptatum.
+
+                    .col-12
+                        .row.g-4
+                            .col-6
+                                img(src="img/bg-img/28.jpg", alt="", data-action="zoom")
+                            .col-6
+                                img(src="img/bg-img/19.jpg", alt="", data-action="zoom")
+                        .mb-4
+
+                    .col-10
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aliquam mollitia accusantium debitis dolore soluta temporibus, laborum, fuga tempora adipisci molestias. Nobis similique nulla eveniet incidunt reprehenderit nam, accusantium asperiores iure. Quas voluptatem, facere facilis repellat!
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis asperiores, quo suscipit quaerat deserunt ullam et ab, dolor, architecto totam culpa temporibus. Quo, quidem. Molestiae, deserunt impedit neque.
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, sed explicabo! Debitis harum ut dolore cupiditate quidem tempore eos aut beatae sint quis nostrum, quas necessitatibus fugiat suscipit a veritatis laudantium?
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ea eveniet impedit eius facere eos distinctio temporibus sit.
+
+            .container
+                .border-top.my-5
+
+            .container
+                .row.justify-content-center
+                    .col-12.col-sm-10.col-lg-8
+                        // Comments Area
+                        .comment-wrapper
+                            h4.mb-5 3 Comments
+
+                            ol.ps-0.list-unstyled
+                                // Single Comment 
+                                li.single-comment
+                                    .comment-content.d-flex
+                                        .comment-author
+                                            img(src="img/bg-img/u4.jpg" alt="author")
+                                        .comment-meta
+                                            p You've saved our business! Thanks guys, keep up the good work! The best on the net!
+                                            a.author(href="#") @designing_world
+                                            a.like(href="#")
+                                                i.bi.bi-heart-fill
+                                                | Like
+                                            a.reply(href="#reply-form")
+                                                i.bi.bi-reply-fill
+                                                | Reply
+
+                                    ol.children.list-unstyled
+                                        // Single Comment 
+                                        li.single-comment
+                                            .comment-content.d-flex
+                                                .comment-author
+                                                    img(src="img/bg-img/u2.jpg" alt="author")
+                                                .comment-meta
+                                                    p I strongly recommend agency to EVERYONE interested in running a successful online business!
+                                                    a.author(href="#") @creative_world
+                                                    a.like(href="#")
+                                                        i.bi.bi-heart-fill
+                                                        | Like
+                                                    a.reply(href="#reply-form")
+                                                        i.bi.bi-reply-fill
+                                                        | Reply
+
+                                // Single Comment 
+                                li.single-comment
+                                    .comment-content.d-flex
+                                        .comment-author
+                                            img(src="img/bg-img/u3.jpg" alt="author")
+                                        .comment-meta
+                                            p Absolutely wonderful! I wish I would have thought of it first. I would be lost without agency.
+                                            a.author(href="#") @nft_fun
+                                            a.like(href="#")
+                                                i.bi.bi-heart-fill
+                                                | Like
+                                            a.reply(href="#reply-form")
+                                                i.bi.bi-reply-fill
+                                                | Reply
+
+                        #reply-form.mb-5
+
+                        .contact-area
+                            h4.mb-5 Leave A Comment
+
+                            form.contact-from(action="#" method="post")
+                                .row.g-4
+                                    .col-12.col-lg-6
+                                        input.form-control(type="text" name="message-name" placeholder="Your Name")
+                                    .col-12.col-lg-6
+                                        input.form-control(type="email" name="message-email" placeholder="Your Email")
+                                    .col-12
+                                        textarea.form-control(name="message" placeholder="Type your comments...")
+                                    .col-12
+                                        button.btn.btn-primary.rounded-pill(type="submit") Submit
+
+        .divider
+
+        include inc/dark-light-mode.pug
+
+        include inc/footer.pug
+
+        include inc/js-plugins.pug

@@ -1,0 +1,81 @@
+doctype html
+html(lang="en", data-theme="dark")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header.pug
+
+        // Breadcrumb 
+        .breadcrumb-wrapper
+            .container
+                .breadcrumb-content
+                    h2.breadcrumb-title Connect Wallet
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.justify-content-center
+                            li.breadcrumb-item
+                                a(href="index.html") Home
+                            li.breadcrumb-item.active(aria-current="page") Wallet
+
+        .divider
+
+        .connect-wallet-wrapper
+            .container
+                .text-center
+                    h2.mb-70 Connect with one of our available wallet providers.
+
+                .row.g-4.g-xl-5.justify-content-center
+                    .col-12.col-md-9.col-lg-6.col-xl-5
+                        .card.wallet-card.shadow-sm
+                            .card-body.px-4
+                                .d-flex.align-items-center
+                                    .img-wrap
+                                        img(src="img/bg-img/metamask.png", alt="")
+                                    h4.mb-0.me-3 Metamask
+                                        span.badge.bg-danger.rounded-pill.align-top.fz-12.ms-1 Hot
+                                    a.btn.btn-sm.btn-warning.rounded-pill.ms-auto(href="#")
+                                        | Connect
+                                        i.ms-1.bi.bi-arrow-right
+
+                    .col-12.col-md-9.col-lg-6.col-xl-5
+                        .card.wallet-card.shadow-sm
+                            .card-body.px-4
+                                .d-flex.align-items-center
+                                    .img-wrap
+                                        img(src="img/bg-img/coinbase.png", alt="")
+                                    h4.mb-0.me-3 Coinbase Wallet
+                                    a.btn.btn-sm.btn-warning.rounded-pill.ms-auto(href="#")
+                                        | Connect
+                                        i.ms-1.bi.bi-arrow-right
+
+                    .col-12.col-md-9.col-lg-6.col-xl-5
+                        .card.wallet-card.shadow-sm
+                            .card-body.px-4
+                                .d-flex.align-items-center
+                                    .img-wrap
+                                        img(src="img/bg-img/kaikas.png", alt="")
+                                    h4.mb-0.me-3 Kaikas
+                                    a.btn.btn-sm.btn-warning.rounded-pill.ms-auto(href="#")
+                                        | Connect
+                                        i.ms-1.bi.bi-arrow-right
+
+                    .col-12.col-md-9.col-lg-6.col-xl-5
+                        .card.wallet-card.shadow-sm
+                            .card-body.px-4
+                                .d-flex.align-items-center
+                                    .img-wrap
+                                        img(src="img/bg-img/venly.png", alt="")
+                                    h4.mb-0.me-3 Venly
+                                    a.btn.btn-sm.btn-warning.rounded-pill.ms-auto(href="#")
+                                        | Connect
+                                        i.ms-1.bi.bi-arrow-right
+
+        .divider
+
+        include inc/dark-light-mode.pug
+
+        include inc/footer.pug
+
+        include inc/js-plugins.pug

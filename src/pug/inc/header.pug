@@ -1,0 +1,158 @@
+// Header Area
+header.header-area    
+    nav.navbar.navbar-expand-lg
+        .container
+            // Navbar Brand 
+            a.navbar-brand(href="index.html")
+                img.light-logo(src="img/core-img/logo.png", alt="")
+                img.dark-logo(src="img/core-img/logo-white.png", alt="")
+
+            // Navbar Toggler 
+            button.navbar-toggler(type="button", data-bs-toggle="collapse", data-bs-target="#funtoNav", aria-controls="funtoNav", aria-expanded="false", aria-label="Toggle navigation")
+                i.bi.bi-grid
+
+            // Navbar 
+            #funtoNav.collapse.navbar-collapse
+                ul.navbar-nav.navbar-nav-scroll.my-2.my-lg-0
+                    li.ft-dd
+                        a(href="#") Home
+
+                        ul.ft-dd-menu
+                            li
+                                a(href="home-1.html") Home Variation 1
+                            li
+                                a(href="home-2.html") Home Variation 2
+
+                    li.ft-dd
+                        a(href="#") Explore
+
+                        ul.ft-dd-menu
+                            li
+                                a(href="explore-1.html") Explore 1
+                            li
+                                a(href="explore-2.html") Explore 2
+                            li
+                                a(href="featured-items.html") Featured Drops
+                            li
+                                a(href="live-bidding.html") Live Auctions
+                            li
+                                a(href="collections.html") Collections
+                            li
+                                a(href="top-seller.html") Top Seller
+                            li
+                                a(href="top-buyer.html") Top Buyer
+                            li
+                                a(href="item-details.html") Item Details
+
+                    li.ft-dd
+                        a(href="#") Admin
+
+                        ul.ft-dd-menu
+                            li
+                                a(href="dashboard.html") Dashboard
+                            li
+                                a(href="live-bids.html") Live Bids
+                            li
+                                a(href="my-collection.html") My Collection
+                            li
+                                a(href="my-wallet.html") My Wallet
+                            li
+                                a(href="notifications.html") Notifications
+                            li
+                                a(href="settings.html") Settings
+
+                    li.ft-dd
+                        a(href="#") Pages
+
+                        ul.ft-dd-menu
+                            li
+                                a(href="activity.html") Activity
+                            li
+                                a(href="ranking.html") Ranking
+                            li
+                                a(href="create-new.html") Create New Items
+                            li
+                                a(href="connet-wallet.html") Connect Wallet
+                            li
+                                a(href="author.html") Author Profile
+                            li.ft-dd
+                                a(href="#") Authentification
+
+                                ul.ft-dd-menu
+                                    li
+                                        a(href="register.html") Register
+                                    li
+                                        a(href="login.html") Login
+                                    li
+                                        a(href="forget-password.html") Forget Password
+                            li.ft-dd
+                                a(href="#") Blog
+
+                                ul.ft-dd-menu
+                                    li
+                                        a(href="blog.html") Blog
+                                    li
+                                        a(href="blog-details.html") Blog Details
+                            li.ft-dd
+                                a(href="#") Others
+
+                                ul.ft-dd-menu
+                                    li
+                                        a(href="about.html") About Us
+                                    li
+                                        a(href="contact.html") Contact
+                                    li
+                                        a(href="coming-soon.html") Coming Soon
+                                    li
+                                        a(href="newsletter.html") Newsletter
+                                    li
+                                        a(href="privacy.html") Privacy Policy
+                                    li
+                                        a(href="terms.html") Terms
+                                    li
+                                        a(href="404.html") 404
+                            li.ft-dd
+                                a(href="#") Help Center
+
+                                ul.ft-dd-menu
+                                    li
+                                        a(href="help-center.html") Help Home
+                                    li
+                                        a(href="help-questions.html") All Questions
+                                    li
+                                        a(href="question-details.html") Question Details
+                    li
+                        a(href="help-center.html") Help Center
+
+                // Header Meta 
+                .header-meta.d-flex.align-items-center.ms-lg-auto
+                    // Search Form 
+                    .search-form.position-relative.d-flex.align-items-center
+                        input.form-control(type="text" placeholder="Search")
+                        button.position-absolute(type="submit")
+                            i.bi.bi-search
+
+                    // User Dropdown 
+                    .user-dropdown.dropdown.mx-3
+                        button.btn.dropdown-toggle.user-btn#dropdownMenuButton1(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                            i.bi.bi-three-dots
+                        ul.dropdown-menu.mt-3(aria-labelledby="dropdownMenuButton1")
+                            li
+                                a.dropdown-item(href="dashboard.html")
+                                    i.me-2.bi.bi-speedometer2
+                                    | Dashboard
+                            li
+                                a.dropdown-item(href="my-collection.html")
+                                    i.me-2.bi.bi-collection
+                                    | Collections
+                            li
+                                a.dropdown-item(href="notifications.html")
+                                    i.me-2.bi.bi-bell
+                                    | Notifications
+                            li
+                                a.dropdown-item(href="settings.html")
+                                    i.me-2.bi.bi-gear
+                                    | Settings
+
+                    // Create New Button 
+                    a.btn.btn-warning.btn-sm.rounded-pill(href="create-new.html") Create

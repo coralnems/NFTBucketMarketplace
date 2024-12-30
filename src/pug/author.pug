@@ -1,0 +1,403 @@
+doctype html
+html(lang="en", data-theme="dark")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header.pug
+
+        // Share Modal 
+        .share-modal.modal.fade#shareModal(tabindex="-1", aria-labelledby="shareModalLabel", aria-hidden="true")
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                    .modal-body.p-4.text-center
+                        h4.mb-4#shareModalLabel Share this author
+
+                        .d-flex.align-items-center.justify-content-center
+                            a.mx-2(href="#")
+                                img(src="img/core-img/icons8-facebook.svg", alt="")                            
+                            a.mx-2(href="#")
+                                img(src="img/core-img/icons8-twitter.svg", alt="")
+                            a.mx-2(href="#")
+                                img(src="img/core-img/icons8-instagram.svg", alt="")
+                            a.mx-2(href="#")
+                                img(src="img/core-img/icons8-slack.svg", alt="")
+                            a.mx-2(href="#")
+                                img(src="img/core-img/icons8-player.svg", alt="")
+
+                        button.btn.btn-danger.btn-sm.rounded-pill.mt-4(type="button", data-bs-dismiss="modal", aria-label="Close")
+                            i.me-1.bi.bi-x-lg
+                            | Close
+
+        // Copy Link Modal 
+        .share-modal.modal.fade#copylinkModal(tabindex="-1", aria-labelledby="copylinkLabel", aria-hidden="true")
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                    .modal-body.p-4.text-center
+                        h4.mb-4#copylinkLabel Copy author link
+
+                        p.user-select-all.mb-0.border.border-2.p-3.rounded https://themeforest.net/item/affan-pwa-mobile-html-template/29715548
+
+                        button.btn.btn-danger.btn-sm.rounded-pill.mt-4(type="button", data-bs-dismiss="modal", aria-label="Close")
+                            i.me-1.bi.bi-x-lg
+                            | Close
+
+        // Report Modal 
+        .share-modal.modal.fade#reportModal(tabindex="-1", aria-labelledby="reportModalLabel", aria-hidden="true")
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                    .modal-body.p-4.text-center
+                        h4.mb-4#reportModalLabel Why are you reporting?
+
+                        form(action="#")
+                            textarea.form-control.mb-3#reportText(name="reportMessage", placeholder="Write your complaint...")
+
+                            .d-flex.align-items-center.justify-content-between
+                                button.btn.btn-danger.btn-sm.rounded-pill(type="button", data-bs-dismiss="modal", aria-label="Close")
+                                    i.me-1.bi.bi-x-lg
+                                    | Close
+                                button.btn.btn-primary.btn-sm.rounded-pill(type="submit") Report
+
+        // Author Top Content 
+        .author-top-content.bg-img.bg-overlay(style="background-image: url('img/bg-img/44.jpg')")
+            .container
+                .card.border-0.bg-transparent
+                    .card-body.p-4.p-sm-5
+                        .row.g-4.g-lg-5.align-items-center
+                            .col-7.col-sm-4.col-lg-3
+                                .author-thumbnail
+                                    img.rounded(src="img/bg-img/u1.jpg", alt="")
+                                    i.bi.bi-patch-check-fill(data-bs-toggle="tooltip", data-bs-placement="top", title="Verified")
+
+                            .col-12.col-sm-8.col-lg-9
+                                .author-data
+                                    h3.mb-2.author-name.text-white Designing World
+                                        a.btn.btn-warning.btn-sm.rounded-pill.align-top.ms-2.px-3.py-1(href="#") Follow
+                                    .btn.btn-minimal.d-inline-block.mb-3.text-white.hover-warning @designing_world
+                                    p.w-75.mb-0.text-white Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quaerat quis similique natus rem.
+
+                    // Author Dropdown 
+                    .dropdown.author-dd
+                        button.dropdown-toggle#dd9887(type="button", data-bs-toggle="dropdown", aria-expanded="false")
+                            i.bi.bi-three-dots-vertical
+
+                        // Dropdown Menu 
+                        ul.dropdown-menu.dropdown-menu-end(aria-labelledby="dd9887")
+                            li
+                                a.dropdown-item(href="#", data-bs-toggle="modal", data-bs-target="#shareModal")
+                                    i.me-1.bi.bi-share
+                                    | Share
+                            li
+                                a.dropdown-item(href="#", data-bs-toggle="modal", data-bs-target="#copylinkModal")
+                                    i.me-1.bi.bi-box-arrow-up-right
+                                    | Copy Link
+                            li
+                                a.dropdown-item(href="#", data-bs-toggle="modal", data-bs-target="#reportModal")
+                                    i.me-1.bi.bi-flag
+                                    | Report
+
+        .author-content-wrap.mt-70
+            .container
+                .row.g-4.g-xl-5.justify-content-center
+                    .col-12.col-sm-9.col-lg-4
+                        .card.author-sidebar-card.shadow-sm
+                            .card-body.p-4.p-md-5.p-lg-4.p-xl-5
+                                h5.mb-3 About this author
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit architecto ipsum quas, eum eius sint esse, omnis quis voluptas est dicta earum dolore recusandae autem asperiores, sed non. Maxime, eius!
+
+                                .meta-data.d-flex.align-items-center.mt-4
+                                    h6.mb-0.border-end.text-center.pe-3.me-3
+                                        span.counter 438 
+                                        <br> Items
+
+                                    h6.mb-0.border-end.text-center.pe-3.me-3
+                                        span.counter 861 
+                                        <br> Owners
+
+                                    h6.mb-0.text-center
+                                        span.counter 3510 
+                                        <br> Followers
+
+                    .col-12.col-lg-8
+                        .row.g-4.align-items-center.justify-content-between
+                            .col-12.col-sm-6
+                                select.filter-select.bg-gray.w-100
+                                    option(selected, value="1") Recently Added
+                                    option(value="2") Recently Sold
+                                    option(value="3") Ending Soon
+
+                            .col-12.col-sm-6
+                                select.filter-select2.bg-gray.w-100
+                                    option(selected, value="1") Art
+                                    option(value="2") Cards
+                                    option(value="3") Collectibles
+                                    option(value="4") Domain
+                                    option(value="5") Music
+                                    option(value="6") Memes
+                                    option(value="7") Photos
+                                    option(value="8") Sports
+                                    option(value="9") Videos
+                                    option(value="10") Vitual Worlds
+
+                        .mb-4.d-block 
+
+                        .row.g-4
+                            .col-12.col-sm-6.col-lg-6
+                                // Featured Card 
+                                .nft-card.card.shadow-sm
+                                    .card-body
+                                        .img-wrap
+                                            img(src="img/bg-img/13.jpg", alt="")
+
+                                            // Badge 
+                                            .badge.bg-primary.position-absolute
+                                                img(src="img/core-img/fire.png", alt="")
+                                                | Featured
+
+                                            // Dropdown 
+                                            .dropdown
+                                                button.btn.dropdown-toggle.rounded-pill.shadow-sm#dd98sd7(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                                    i.bi.bi-three-dots-vertical
+                                                // Dropdown Menu 
+                                                ul.dropdown-menu.dropdown-menu-end(aria-labelledby="dd98sd7")
+                                                    li
+                                                        a.dropdown-item(href="#")
+                                                            i.me-1.bi.bi-share
+                                                            | Share
+                                                    li
+                                                        a.dropdown-item(href="#")
+                                                            i.me-1.bi.bi-flag
+                                                            | Report
+                                                    li
+                                                        a.dropdown-item(href="#")
+                                                            i.me-1.bi.bi-bookmark
+                                                            | Bookmark
+
+                                        // Others Info 
+                                        .row.gx-2.align-items-center.mt-3
+                                            .col-8
+                                                span.d-block.fz-12
+                                                    i.bi.bi-arrow-up
+                                                    | Hightest bid 0.861 ETH
+                                            .col-4.text-end
+                                                button.wishlist-btn(type="button")
+                                                    i.bi
+
+                                        // Meta Info 
+                                        .row.gx-2.align-items-center.mt-2
+                                            .col-8
+                                                .name-info.d-flex.align-items-center
+                                                    .author-img.position-relative
+                                                        img.shadow(src="img/bg-img/u1.jpg", alt="")
+                                                        i.bi.bi-check.position-absolute.bg-success
+                                                    .name-author
+                                                        a.name.d-block.hover-primary.fw-bold.text-truncate(href="item-details.html", data-bs-toggle="tooltip", data-bs-placement="top", title="Monkey Arts #114") Monkey Arts #114
+                                                        a.author.d-block.fz-12.hover-primary.text-truncate(href="author.html") @nft_fun
+                                            .col-4
+                                                .price.text-end
+                                                    span.fz-12.d-block Current Bid
+                                                    h6.mb-0 0.861 ETH
+
+                                        // Button 
+                                        .row.gx-2.align-items-center.mt-3
+                                            .col-6
+                                                a.btn.btn-primary.btn-sm.rounded-pill(href="#") Place bid
+                                            .col-6.text-end
+                                                a.btn.btn-minimal.btn-sm.hover-primary(href="activity.html")
+                                                    i.bi.bi-activity.me-1
+                                                    | Activity
+
+                            .col-12.col-sm-6.col-lg-6
+                                // Featured Card 
+                                .nft-card.card.shadow-sm
+                                    .card-body
+                                        .img-wrap
+                                            img(src="img/bg-img/14.jpg", alt="")
+
+                                            // Dropdown 
+                                            .dropdown
+                                                button.btn.dropdown-toggle.rounded-pill.shadow-sm#ddxx211(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                                    i.bi.bi-three-dots-vertical
+                                                // Dropdown Menu 
+                                                ul.dropdown-menu.dropdown-menu-end(aria-labelledby="ddxx211")
+                                                    li
+                                                        a.dropdown-item(href="#")
+                                                            i.me-1.bi.bi-share
+                                                            | Share
+                                                    li
+                                                        a.dropdown-item(href="#")
+                                                            i.me-1.bi.bi-flag
+                                                            | Report
+                                                    li
+                                                        a.dropdown-item(href="#")
+                                                            i.me-1.bi.bi-bookmark
+                                                            | Bookmark
+
+                                        // Others Info 
+                                        .row.gx-2.align-items-center.mt-3
+                                            .col-8
+                                                span.d-block.fz-12
+                                                    i.bi.bi-arrow-up
+                                                    | Hightest bid 2.961 ETH
+                                            .col-4.text-end
+                                                button.wishlist-btn.active(type="button")
+                                                    i.bi
+
+                                        // Meta Info 
+                                        .row.gx-2.align-items-center.mt-2
+                                            .col-8
+                                                .name-info.d-flex.align-items-center
+                                                    .author-img.position-relative
+                                                        img.shadow(src="img/bg-img/u2.jpg", alt="")
+                                                        i.bi.bi-check.position-absolute.bg-success
+                                                    .name-author
+                                                        a.name.d-block.hover-primary.fw-bold.text-truncate(href="item-details.html", data-bs-toggle="tooltip", data-bs-placement="top", title="Two Monkey's Fun") Two Monkey's Fun
+                                                        a.author.d-block.fz-12.hover-primary.text-truncate(href="author.html") @creative_art
+                                            .col-4
+                                                .price.text-end
+                                                    span.fz-12.d-block Current Bid
+                                                    h6.mb-0 2.961 ETH
+
+                                        // Button 
+                                        .row.gx-2.align-items-center.mt-3
+                                            .col-6
+                                                a.btn.btn-primary.btn-sm.rounded-pill(href="#") Place bid
+                                            .col-6.text-end
+                                                a.btn.btn-minimal.btn-sm.hover-primary(href="activity.html") 
+                                                    i.bi.bi-activity.me-1
+                                                    | Activity
+
+                            .col-12.col-sm-6.col-lg-6
+                                // Featured Card 
+                                .nft-card.card.shadow-sm
+                                    .card-body
+                                        .img-wrap
+                                            img(src="img/bg-img/15.jpg", alt="")
+
+                                            // Dropdown 
+                                            .dropdown
+                                                button.btn.dropdown-toggle.rounded-pill.shadow-sm#ddsdff87(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                                    i.bi.bi-three-dots-vertical
+                                                // Dropdown Menu 
+                                                ul.dropdown-menu.dropdown-menu-end(aria-labelledby="ddsdff87")
+                                                    li
+                                                        a.dropdown-item(href="#")
+                                                            i.me-1.bi.bi-share
+                                                            | Share
+                                                    li
+                                                        a.dropdown-item(href="#")
+                                                            i.me-1.bi.bi-flag
+                                                            | Report
+                                                    li
+                                                        a.dropdown-item(href="#")
+                                                            i.me-1.bi.bi-bookmark
+                                                            | Bookmark
+
+                                        // Others Info 
+                                        .row.gx-2.align-items-center.mt-3
+                                            .col-8
+                                                span.d-block.fz-12
+                                                    i.bi.bi-arrow-up
+                                                    | Hightest bid 0.06 ETH
+                                            .col-4.text-end
+                                                button.wishlist-btn(type="button")
+                                                    i.bi
+
+                                        // Meta Info 
+                                        .row.gx-2.align-items-center.mt-2
+                                            .col-8
+                                                .name-info.d-flex.align-items-center
+                                                    .author-img.position-relative
+                                                        img.shadow(src="img/bg-img/u3.jpg", alt="")
+                                                        i.bi.bi-check.position-absolute.bg-success
+                                                    .name-author
+                                                        a.name.d-block.hover-primary.fw-bold.text-truncate(href="item-details.html", data-bs-toggle="tooltip", data-bs-placement="top", title="Kings with Bitcoin") Kings with Bitcoin
+                                                        a.author.d-block.fz-12.hover-primary.text-truncate(href="author.html") @designing_world
+                                            .col-4
+                                                .price.text-end
+                                                    span.fz-12.d-block Current Bid
+                                                    h6.mb-0 0.06 ETH
+
+                                        // Button 
+                                        .row.gx-2.align-items-center.mt-3
+                                            .col-6
+                                                a.btn.btn-primary.btn-sm.rounded-pill(href="#") Place bid
+                                            .col-6.text-end
+                                                a.btn.btn-minimal.btn-sm.hover-primary(href="activity.html") 
+                                                    i.bi.bi-activity.me-1
+                                                    | Activity
+
+                            .col-12.col-sm-6.col-lg-6
+                                // Featured Card 
+                                .nft-card.card.shadow-sm
+                                    .card-body
+                                        .img-wrap
+                                            img(src="img/bg-img/16.jpg", alt="")
+
+                                            // Badge 
+                                            .badge.bg-dark.position-absolute
+                                                img(src="img/core-img/fire.png", alt="")
+                                                | New Bid
+
+                                            // Dropdown 
+                                            .dropdown
+                                                button.btn.dropdown-toggle.rounded-pill.shadow-sm#dde74e(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                                    i.bi.bi-three-dots-vertical
+                                                // Dropdown Menu 
+                                                ul.dropdown-menu.dropdown-menu-end(aria-labelledby="dde74e")
+                                                    li
+                                                        a.dropdown-item(href="#")
+                                                            i.me-1.bi.bi-share
+                                                            | Share
+                                                    li
+                                                        a.dropdown-item(href="#")
+                                                            i.me-1.bi.bi-flag
+                                                            | Report
+                                                    li
+                                                        a.dropdown-item(href="#")
+                                                            i.me-1.bi.bi-bookmark
+                                                            | Bookmark
+
+                                        // Others Info 
+                                        .row.gx-2.align-items-center.mt-3
+                                            .col-8
+                                                span.d-block.fz-12
+                                                    i.bi.bi-arrow-up
+                                                    | Hightest bid 0.01 ETH
+                                            .col-4.text-end
+                                                button.wishlist-btn(type="button")
+                                                    i.bi
+
+                                        // Meta Info 
+                                        .row.gx-2.align-items-center.mt-2
+                                            .col-8
+                                                .name-info.d-flex.align-items-center
+                                                    .author-img.position-relative
+                                                        img.shadow(src="img/bg-img/u4.jpg", alt="")
+                                                        i.bi.bi-check.position-absolute.bg-success
+                                                    .name-author
+                                                        a.name.d-block.hover-primary.fw-bold.text-truncate(href="item-details.html", data-bs-toggle="tooltip", data-bs-placement="top", title="Pixel Plane") Pixel Plane
+                                                        a.author.d-block.fz-12.hover-primary.text-truncate(href="author.html") @nft_fun
+                                            .col-4
+                                                .price.text-end
+                                                    span.fz-12.d-block Current Bid
+                                                    h6.mb-0 0.01 ETH
+
+                                        // Button 
+                                        .row.gx-2.align-items-center.mt-3
+                                            .col-6
+                                                a.btn.btn-primary.btn-sm.rounded-pill(href="#") Place bid
+                                            .col-6.text-end
+                                                a.btn.btn-minimal.btn-sm.hover-primary(href="activity.html") 
+                                                    i.bi.bi-activity.me-1
+                                                    | Activity
+
+        .divider
+
+        include inc/dark-light-mode.pug
+
+        include inc/footer.pug
+
+        include inc/js-plugins.pug

@@ -1,0 +1,935 @@
+// Create New Button 
+.create-new-button
+    a.shadow-lg.btn.btn-warning(href="create-new.html", data-bs-toggle="tooltip", data-bs-placement="left", title="Create New NFT")
+        i.fz-18.bi.bi-plus-lg
+
+.admin-wrapper
+    .container
+        .row.g-4
+            .col-12.col-xxl-6
+                .row.g-4
+                    // Welcome Card 
+                    .col-12
+                        .card.dashboard-hero-card.p-2.border-0.bg-img.shadow-sm(style="background-image: url('img/bg-img/44.jpg')")
+                            .card-body.p-4
+                                h3.mb-3.text-white Explore, buy, and sell exceptional NFTs.
+                                p.mb-4.text-white It's crafted with the latest trend of design &amp; coded with all modern approaches.
+                                .button-groups
+                                    a.btn.btn-sm.btn-warning.rounded-pill.me-3(href="#") Discover
+                                    a.btn.btn-sm.btn-dark.rounded-pill(href="#") Create
+
+                    // Statistic Card 
+                    .col-12.col-sm-6
+                        .card.border-0.shadow-sm
+                            .card-body.p-4
+                                .d-flex.align-items-center.justify-content-between
+                                    div
+                                        h5.mb-2 Sales
+                                        span Last 10 days
+                                    .ms-auto#chart-1
+
+                    // Statistic Card 
+                    .col-12.col-sm-6
+                        .card.border-0.shadow-sm
+                            .card-body.p-4
+                                .d-flex.align-items-center.justify-content-between
+                                    div
+                                        h5.mb-2 Revenue
+                                        span Last 10 days
+                                    .ms-auto#chart-2
+
+            .col-12.col-xxl-6
+                // Monthly Visitor 
+                .col-12
+                    .card.border-0.shadow-sm
+                        .card-body.p-4.pb-0
+                            h5.ms-3 Monthly Visitors
+                            #chart-timeline
+
+            .col-12.col-xxl-6
+                .card.border-0.shadow-sm
+                    .card-body.p-4
+                        .d-flex.flex-wrap.align-items-center.justify-content-between.mb-3
+                            h5 Activity
+
+                            ul#funtoTab.nav.nav-tabs.border-0.mb-2(role="tablist")
+                                li.nav-item
+                                    a#tab--1.rounded-pill.btn.btn-sm.btn-primary.me-1.active(data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true") Today
+                                li.nav-item
+                                    a#tab--2.rounded-pill.btn.btn-sm.btn-primary.me-1(data-bs-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false") 7 days
+                                li.nav-item
+                                    a#tab--3.rounded-pill.btn.btn-sm.btn-primary(data-bs-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false") 30 days
+
+                        .tab-content
+                            // Tab Pane
+                            #tab1.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="tab--1")
+                                .table-responsive.border.shadow-sm.dashboard-table.activity-table
+                                    table.table.mb-0
+                                        tbody
+                                            tr
+                                                th(scope="row")
+                                                    a.btn.btn-minimal.text-dark.hover-primary(href="#") 
+                                                        img.rounded.me-1(src="img/bg-img/5.jpg", alt="")
+                                                        | NFT Logo
+                                                td 
+                                                    span.d-inline-block.fw-bold.fz-14 0.235 ETH
+                                                td
+                                                    i.bi.bi-cart
+                                                    | Sales
+                                                td
+                                                    i.bi.bi-clock
+                                                    | 29 min ago
+                                            tr
+                                                th(scope="row")
+                                                    a.btn.btn-minimal.text-dark.hover-primary(href="#") 
+                                                        img.rounded.me-1(src="img/bg-img/6.jpg", alt="")
+                                                        | Pixel Art
+                                                td 
+                                                    span.d-inline-block.fw-bold.fz-14 0.706 ETH
+                                                td
+                                                    i.bi.bi-percent
+                                                    | Offer
+                                                td
+                                                    i.bi.bi-clock
+                                                    | 1h ago
+                                            tr
+                                                th(scope="row")
+                                                    a.btn.btn-minimal.text-dark.hover-primary(href="#") 
+                                                        img.rounded.me-1(src="img/bg-img/7.jpg", alt="")
+                                                        | Funny Pigs
+                                                td 
+                                                    span.d-inline-block.fw-bold.fz-14 0.105 ETH
+                                                td
+                                                    i.bi.bi-patch-exclamation
+                                                    | Alert
+                                                td
+                                                    i.bi.bi-clock
+                                                    | 2h ago
+                                            tr
+                                                th(scope="row")
+                                                    a.btn.btn-minimal.text-dark.hover-primary(href="#") 
+                                                        img.rounded.me-1(src="img/bg-img/8.jpg", alt="")
+                                                        | Fancy Car 2
+                                                td 
+                                                    span.d-inline-block.fw-bold.fz-14 0.95 ETH
+                                                td
+                                                    i.bi.bi-cart
+                                                    | Sales
+                                                td
+                                                    i.bi.bi-clock
+                                                    | 3h ago
+                                            tr
+                                                th(scope="row")
+                                                    a.btn.btn-minimal.text-dark.hover-primary(href="#") 
+                                                        img.rounded.me-1(src="img/bg-img/5.jpg", alt="")
+                                                        | NFT Logo
+                                                td 
+                                                    span.d-inline-block.fw-bold.fz-14 0.235 ETH
+                                                td
+                                                    i.bi.bi-cart
+                                                    | Sales
+                                                td
+                                                    i.bi.bi-clock
+                                                    | 12h ago
+                                            tr
+                                                th(scope="row")
+                                                    a.btn.btn-minimal.text-dark.hover-primary(href="#") 
+                                                        img.rounded.me-1(src="img/bg-img/6.jpg", alt="")
+                                                        | Pixel Art
+                                                td 
+                                                    span.d-inline-block.fw-bold.fz-14 0.706 ETH
+                                                td
+                                                    i.bi.bi-percent
+                                                    | Offer
+                                                td
+                                                    i.bi.bi-clock
+                                                    | 17h ago
+
+                            // Tab Pane
+                            #tab2.tab-pane.fade(role="tabpanel" aria-labelledby="tab--2")
+                                .table-responsive.border.shadow-sm.activity-table
+                                    table.table.mb-0
+                                        tbody
+                                            tr
+                                                th(scope="row")
+                                                    a.btn.btn-minimal.text-dark.hover-primary(href="#") 
+                                                        img.rounded.me-1(src="img/bg-img/5.jpg", alt="")
+                                                        | NFT Logo
+                                                td 
+                                                    span.d-inline-block.fw-bold.fz-14 0.235 ETH
+                                                td
+                                                    i.bi.bi-cart
+                                                    | Sales
+                                                td
+                                                    i.bi.bi-clock
+                                                    | 29 min ago
+                                            tr
+                                                th(scope="row")
+                                                    a.btn.btn-minimal.text-dark.hover-primary(href="#") 
+                                                        img.rounded.me-1(src="img/bg-img/6.jpg", alt="")
+                                                        | Pixel Art
+                                                td 
+                                                    span.d-inline-block.fw-bold.fz-14 0.706 ETH
+                                                td
+                                                    i.bi.bi-percent
+                                                    | Offer
+                                                td
+                                                    i.bi.bi-clock
+                                                    | 1h ago
+                                            tr
+                                                th(scope="row")
+                                                    a.btn.btn-minimal.text-dark.hover-primary(href="#") 
+                                                        img.rounded.me-1(src="img/bg-img/7.jpg", alt="")
+                                                        | Funny Pigs
+                                                td 
+                                                    span.d-inline-block.fw-bold.fz-14 0.105 ETH
+                                                td
+                                                    i.bi.bi-patch-exclamation
+                                                    | Alert
+                                                td
+                                                    i.bi.bi-clock
+                                                    | 2h ago
+                                            tr
+                                                th(scope="row")
+                                                    a.btn.btn-minimal.text-dark.hover-primary(href="#") 
+                                                        img.rounded.me-1(src="img/bg-img/8.jpg", alt="")
+                                                        | Fancy Car 2
+                                                td 
+                                                    span.d-inline-block.fw-bold.fz-14 0.95 ETH
+                                                td
+                                                    i.bi.bi-cart
+                                                    | Sales
+                                                td
+                                                    i.bi.bi-clock
+                                                    | 3h ago
+                                            tr
+                                                th(scope="row")
+                                                    a.btn.btn-minimal.text-dark.hover-primary(href="#") 
+                                                        img.rounded.me-1(src="img/bg-img/5.jpg", alt="")
+                                                        | NFT Logo
+                                                td 
+                                                    span.d-inline-block.fw-bold.fz-14 0.235 ETH
+                                                td
+                                                    i.bi.bi-cart
+                                                    | Sales
+                                                td
+                                                    i.bi.bi-clock
+                                                    | 12h ago
+                                            tr
+                                                th(scope="row")
+                                                    a.btn.btn-minimal.text-dark.hover-primary(href="#") 
+                                                        img.rounded.me-1(src="img/bg-img/6.jpg", alt="")
+                                                        | Pixel Art
+                                                td 
+                                                    span.d-inline-block.fw-bold.fz-14 0.706 ETH
+                                                td
+                                                    i.bi.bi-percent
+                                                    | Offer
+                                                td
+                                                    i.bi.bi-clock
+                                                    | 17h ago
+
+                            // Tab Pane
+                            #tab3.tab-pane.fade(role="tabpanel" aria-labelledby="tab--3")
+                                .table-responsive.border.shadow-sm.activity-table
+                                    table.table.mb-0
+                                        tbody
+                                            tr
+                                                th(scope="row")
+                                                    a.btn.btn-minimal.text-dark.hover-primary(href="#") 
+                                                        img.rounded.me-1(src="img/bg-img/5.jpg", alt="")
+                                                        | NFT Logo
+                                                td 
+                                                    span.d-inline-block.fw-bold.fz-14 0.235 ETH
+                                                td
+                                                    i.bi.bi-cart
+                                                    | Sales
+                                                td
+                                                    i.bi.bi-clock
+                                                    | 29 min ago
+                                            tr
+                                                th(scope="row")
+                                                    a.btn.btn-minimal.text-dark.hover-primary(href="#") 
+                                                        img.rounded.me-1(src="img/bg-img/6.jpg", alt="")
+                                                        | Pixel Art
+                                                td 
+                                                    span.d-inline-block.fw-bold.fz-14 0.706 ETH
+                                                td
+                                                    i.bi.bi-percent
+                                                    | Offer
+                                                td
+                                                    i.bi.bi-clock
+                                                    | 1h ago
+                                            tr
+                                                th(scope="row")
+                                                    a.btn.btn-minimal.text-dark.hover-primary(href="#") 
+                                                        img.rounded.me-1(src="img/bg-img/7.jpg", alt="")
+                                                        | Funny Pigs
+                                                td 
+                                                    span.d-inline-block.fw-bold.fz-14 0.105 ETH
+                                                td
+                                                    i.bi.bi-patch-exclamation
+                                                    | Alert
+                                                td
+                                                    i.bi.bi-clock
+                                                    | 2h ago
+                                            tr
+                                                th(scope="row")
+                                                    a.btn.btn-minimal.text-dark.hover-primary(href="#") 
+                                                        img.rounded.me-1(src="img/bg-img/8.jpg", alt="")
+                                                        | Fancy Car 2
+                                                td 
+                                                    span.d-inline-block.fw-bold.fz-14 0.95 ETH
+                                                td
+                                                    i.bi.bi-cart
+                                                    | Sales
+                                                td
+                                                    i.bi.bi-clock
+                                                    | 3h ago
+                                            tr
+                                                th(scope="row")
+                                                    a.btn.btn-minimal.text-dark.hover-primary(href="#") 
+                                                        img.rounded.me-1(src="img/bg-img/5.jpg", alt="")
+                                                        | NFT Logo
+                                                td 
+                                                    span.d-inline-block.fw-bold.fz-14 0.235 ETH
+                                                td
+                                                    i.bi.bi-cart
+                                                    | Sales
+                                                td
+                                                    i.bi.bi-clock
+                                                    | 12h ago
+                                            tr
+                                                th(scope="row")
+                                                    a.btn.btn-minimal.text-dark.hover-primary(href="#") 
+                                                        img.rounded.me-1(src="img/bg-img/6.jpg", alt="")
+                                                        | Pixel Art
+                                                td 
+                                                    span.d-inline-block.fw-bold.fz-14 0.706 ETH
+                                                td
+                                                    i.bi.bi-percent
+                                                    | Offer
+                                                td
+                                                    i.bi.bi-clock
+                                                    | 17h ago
+
+            // Treading Auctions 
+            .col-12.col-xxl-6
+                .card.border-0.shadow-sm
+                    .card-body.p-4
+                        .d-flex.align-items-center.mb-3
+                            img.me-1(src="img/core-img/fire2.png", alt="")
+                            h5.mb-0 Trending Auctions
+
+                        .trending-auction-slide
+                            div
+                                .nft-card.card.border-0.bg-gray
+                                    .card-body
+                                        .img-wrap
+                                            img(src="img/bg-img/9.jpg", alt="")
+
+                                            // Badge 
+                                            .badge.bg-dark.position-absolute
+                                                img(src="img/core-img/fire.png", alt="")
+                                                | New Bid
+
+                                            // Dropdown 
+                                            .dropdown
+                                                button.btn.dropdown-toggle.rounded-pill.shadow-sm#dropdownqc22(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                                    i.bi.bi-three-dots-vertical
+
+                                                // Dropdown Menu 
+                                                ul.dropdown-menu.dropdown-menu-end(aria-labelledby="dropdownqc22")
+                                                    li
+                                                        a.dropdown-item(href="#")
+                                                            i.me-1.bi.bi-share
+                                                            | Share
+                                                    li
+                                                        a.dropdown-item(href="#")
+                                                            i.me-1.bi.bi-flag
+                                                            | Report
+                                                    li
+                                                        a.dropdown-item(href="#")
+                                                            i.me-1.bi.bi-bookmark
+                                                            | Bookmark
+
+                                            // Bid End 
+                                            .bid-ends(data-date="March 31, 2023 14:19:54")
+                                                div
+                                                    span.days
+                                                    span Days
+                                                div
+                                                    span.hours
+                                                    span Hours
+                                                div
+                                                    span.minutes
+                                                    span Min
+                                                div
+                                                    span.seconds
+                                                    span Sec
+
+                                        // Others Info 
+                                        .row.gx-2.align-items-center.mt-3
+                                            .col-8
+                                                span.d-block.fz-12
+                                                    i.bi.bi-bag.me-1
+                                                    | 3 stock available
+                                            .col-4.text-end
+                                                button.wishlist-btn(type="button")
+                                                    i.bi
+
+                                        // Meta Info 
+                                        .row.gx-2.align-items-center.mt-2
+                                            .col-8
+                                                .name-info.d-flex.align-items-center
+                                                    .author-img.position-relative
+                                                        img.shadow(src="img/bg-img/u4.jpg", alt="")
+                                                        i.bi.bi-check.position-absolute.bg-success
+                                                    .name-author
+                                                        a.name.d-block.hover-primary.fw-bold.text-truncate(href="item-details.html", data-bs-toggle="tooltip", data-bs-placement="top", title="Fancy Car") Fancy Car
+                                                        a.author.d-block.fz-12.hover-primary.text-truncate(href="author.html") @fancy_car
+                                            .col-4
+                                                .price.text-end
+                                                    span.fz-12.d-block Current Bid
+                                                    h6.mb-0 0.784 ETH
+
+                                            .col-12
+                                                a.btn.btn-primary.rounded-pill.btn-sm.mt-3.w-100(href="#") Place Bid
+
+                            div
+                                .nft-card.card.border-0.bg-gray
+                                    .card-body
+                                        .img-wrap
+                                            img(src="img/bg-img/10.jpg", alt="")
+
+                                            // Badge 
+                                            .badge.bg-dark.position-absolute
+                                                img(src="img/core-img/fire.png", alt="")
+                                                | New Bid
+
+                                            // Dropdown 
+                                            .dropdown
+                                                button.btn.dropdown-toggle.rounded-pill.shadow-sm#dropdownvb22(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                                    i.bi.bi-three-dots-vertical
+
+                                                // Dropdown Menu 
+                                                ul.dropdown-menu.dropdown-menu-end(aria-labelledby="dropdownvb22")
+                                                    li
+                                                        a.dropdown-item(href="#")
+                                                            i.me-1.bi.bi-share
+                                                            | Share
+                                                    li
+                                                        a.dropdown-item(href="#")
+                                                            i.me-1.bi.bi-flag
+                                                            | Report
+                                                    li
+                                                        a.dropdown-item(href="#")
+                                                            i.me-1.bi.bi-bookmark
+                                                            | Bookmark
+
+                                            // Bid End 
+                                            .bid-ends(data-date="April 4, 2023 00:00:00")
+                                                div
+                                                    span.days
+                                                    span Days
+                                                div
+                                                    span.hours
+                                                    span Hours
+                                                div
+                                                    span.minutes
+                                                    span Min
+                                                div
+                                                    span.seconds
+                                                    span Sec
+
+                                        // Others Info 
+                                        .row.gx-2.align-items-center.mt-3
+                                            .col-8
+                                                span.d-block.fz-12
+                                                    i.bi.bi-bag.me-1
+                                                    | 11 stock available
+                                            .col-4.text-end
+                                                button.wishlist-btn.active(type="button")
+                                                    i.bi
+
+                                        // Meta Info 
+                                        .row.gx-2.align-items-center.mt-2
+                                            .col-8
+                                                .name-info.d-flex.align-items-center
+                                                    .author-img.position-relative
+                                                        img.shadow(src="img/bg-img/u1.jpg", alt="")
+                                                        i.bi.bi-check.position-absolute.bg-success
+                                                    .name-author
+                                                        a.name.d-block.hover-primary.fw-bold.text-truncate(href="item-details.html", data-bs-toggle="tooltip", data-bs-placement="top", title="Animal Playing with Guiter") Animal Playing with Guiter
+                                                        a.author.d-block.fz-12.hover-primary.text-truncate(href="author.html") @creative_world
+                                            .col-4
+                                                .price.text-end
+                                                    span.fz-12.d-block Current Bid
+                                                    h6.mb-0 0.784 ETH
+
+                                            .col-12
+                                                a.btn.btn-primary.rounded-pill.btn-sm.mt-3.w-100(href="#") Place Bid
+
+                            div
+                                .nft-card.card.border-0.bg-gray
+                                    .card-body
+                                        .img-wrap
+                                            img(src="img/bg-img/11.jpg", alt="")
+
+                                            // Badge 
+                                            .badge.bg-danger.position-absolute
+                                                img(src="img/core-img/fire.png", alt="")
+                                                | Bid Done
+
+                                            // Dropdown 
+                                            .dropdown
+                                                button.btn.dropdown-toggle.rounded-pill.shadow-sm#dropdown282(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                                    i.bi.bi-three-dots-vertical
+
+                                                // Dropdown Menu 
+                                                ul.dropdown-menu.dropdown-menu-end(aria-labelledby="dropdown282")
+                                                    li
+                                                        a.dropdown-item(href="#")
+                                                            i.me-1.bi.bi-share
+                                                            | Share
+                                                    li
+                                                        a.dropdown-item(href="#")
+                                                            i.me-1.bi.bi-flag
+                                                            | Report
+                                                    li
+                                                        a.dropdown-item(href="#")
+                                                            i.me-1.bi.bi-bookmark
+                                                            | Bookmark
+
+                                            // Bid End 
+                                            .bid-ends(data-date="Feb 28, 2023 12:34:00")
+                                                div
+                                                    span.days
+                                                    span Days
+                                                div
+                                                    span.hours
+                                                    span Hours
+                                                div
+                                                    span.minutes
+                                                    span Min
+                                                div
+                                                    span.seconds
+                                                    span Sec
+
+                                        // Others Info 
+                                        .row.gx-2.align-items-center.mt-3
+                                            .col-8
+                                                span.d-block.fz-12
+                                                    i.bi.bi-bag.me-1
+                                                    | Not available
+                                            .col-4.text-end
+                                                button.wishlist-btn(type="button")
+                                                    i.bi
+
+                                        // Meta Info 
+                                        .row.gx-2.align-items-center.mt-2
+                                            .col-8
+                                                .name-info.d-flex.align-items-center
+                                                    .author-img.position-relative
+                                                        img.shadow(src="img/bg-img/u2.jpg", alt="")
+                                                        i.bi.bi-check.position-absolute.bg-success
+                                                    .name-author
+                                                        a.name.d-block.hover-primary.fw-bold.text-truncate(href="item-details.html", data-bs-toggle="tooltip", data-bs-placement="top", title="Halloween #471") Halloween #471
+                                                        a.author.d-block.fz-12.hover-primary.text-truncate(href="author.html") @fancy_car
+                                            .col-4
+                                                .price.text-end
+                                                    span.fz-12.d-block Current Bid
+                                                    h6.mb-0 0.784 ETH
+
+                                            .col-12
+                                                a.btn.btn-primary.rounded-pill.btn-sm.mt-3.w-100.disabled(href="#") Place Bid
+
+                            div
+                                .nft-card.card.border-0.bg-gray
+                                    .card-body
+                                        .img-wrap
+                                            img(src="img/bg-img/12.jpg", alt="")
+
+                                            // Badge 
+                                            .badge.bg-danger.position-absolute
+                                                img(src="img/core-img/fire.png", alt="")
+                                                | Hot Bid
+
+                                            // Dropdown 
+                                            .dropdown
+                                                button.btn.dropdown-toggle.rounded-pill.shadow-sm#dropdown42r2(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                                    i.bi.bi-three-dots-vertical
+
+                                                // Dropdown Menu 
+                                                ul.dropdown-menu.dropdown-menu-end(aria-labelledby="dropdown42r2")
+                                                    li
+                                                        a.dropdown-item(href="#")
+                                                            i.me-1.bi.bi-share
+                                                            | Share
+                                                    li
+                                                        a.dropdown-item(href="#")
+                                                            i.me-1.bi.bi-flag
+                                                            | Report
+                                                    li
+                                                        a.dropdown-item(href="#")
+                                                            i.me-1.bi.bi-bookmark
+                                                            | Bookmark
+
+                                            // Bid End 
+                                            .bid-ends(data-date="December 31, 2022 14:19:39")
+                                                div
+                                                    span.days
+                                                    span Days
+                                                div
+                                                    span.hours
+                                                    span Hours
+                                                div
+                                                    span.minutes
+                                                    span Min
+                                                div
+                                                    span.seconds
+                                                    span Sec
+
+                                        // Others Info 
+                                        .row.gx-2.align-items-center.mt-3
+                                            .col-8
+                                                span.d-block.fz-12
+                                                    i.bi.bi-bag.me-1
+                                                    | 29 stock available
+                                            .col-4.text-end
+                                                button.wishlist-btn(type="button")
+                                                    i.bi
+
+                                        // Meta Info 
+                                        .row.gx-2.align-items-center.mt-2
+                                            .col-8
+                                                .name-info.d-flex.align-items-center
+                                                    .author-img.position-relative
+                                                        img.shadow(src="img/bg-img/u3.jpg", alt="")
+                                                        i.bi.bi-check.position-absolute.bg-success
+                                                    .name-author
+                                                        a.name.d-block.hover-primary.fw-bold.text-truncate(href="item-details.html", data-bs-toggle="tooltip", data-bs-placement="top", title="Vigor Dance") Vigor Dance
+                                                        a.author.d-block.fz-12.hover-primary.text-truncate(href="author.html") @fancy_nft
+                                            .col-4
+                                                .price.text-end
+                                                    span.fz-12.d-block Current Bid
+                                                    h6.mb-0 0.784 ETH
+
+                                            .col-12
+                                                a.btn.btn-warning.rounded-pill.btn-sm.mt-3.w-100(href="#") Place Bid
+
+            .col-12
+                .card.border-0.shadow-sm
+                    .card-body.p-4
+                        .d-flex.align-items-center.justify-content-between.mb-3
+                            h5 Top NFTs
+                            a.btn.btn-primary.btn-minimal(href="#") View all NFTs
+
+                        .row.g-4.justify-content-center
+                            .col-12.col-sm-6.col-xl-4
+                                .nft-card.card.featured-card.border-0.bg-gray
+                                    .img-wrap
+                                        img(src="img/bg-img/40.jpg", alt="")
+
+                                        // Badge 
+                                        .badge.bg-primary.position-absolute
+                                            img(src="img/core-img/fire.png", alt="")
+                                            | Featured
+
+                                        // Dropdown 
+                                        .dropdown
+                                            button.btn.dropdown-toggle.rounded-pill.shadow-sm#dropdowns1(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                                i.bi.bi-three-dots-vertical
+
+                                            // Dropdown Menu 
+                                            ul.dropdown-menu.dropdown-menu-end(aria-labelledby="dropdowns1")
+                                                li
+                                                    a.dropdown-item(href="#")
+                                                        i.me-1.bi.bi-share
+                                                        | Share
+                                                li
+                                                    a.dropdown-item(href="#")
+                                                        i.me-1.bi.bi-flag
+                                                        | Report
+                                                li
+                                                    a.dropdown-item(href="#")
+                                                        i.me-1.bi.bi-bookmark
+                                                        | Bookmark
+
+                                    .card-body
+                                        // Others Info 
+                                        .row.gx-2.align-items-center
+                                            .col-8
+                                                span.d-block.fz-12
+                                                    i.bi.bi-arrow-up
+                                                    | Hightest bid 0.061 ETH
+                                            .col-4.text-end
+                                                button.wishlist-btn.active(type="button")
+                                                    i.bi
+
+                                        // Meta Info 
+                                        .row.gx-2.align-items-center.mt-2
+                                            .col-8
+                                                .name-info.d-flex.align-items-center
+                                                    .author-img.position-relative
+                                                        img.shadow(src="img/bg-img/u1.jpg", alt="")
+                                                        i.bi.bi-check.position-absolute.bg-success
+                                                    .name-author
+                                                        a.name.d-block.hover-primary.fw-bold.text-truncate(href="item-details.html", data-bs-toggle="tooltip", data-bs-placement="top", title="Cowboy Riding Bull Nature") Cowboy Riding Bull Nature
+                                                        a.author.d-block.fz-12.hover-primary.text-truncate(href="author.html") @designing_world
+                                            .col-4
+                                                .price.text-end
+                                                    span.fz-12.d-block Current Bid
+                                                    h6.mb-0 0.061 ETH
+
+                                        // Button 
+                                        .row.gx-2.align-items-center.mt-3
+                                            .col-6
+                                                a.btn.btn-primary.rounded-pill.btn-sm(href="#") Place Bid
+                                            .col-6.text-end
+                                                a.btn.btn-minimal.btn-sm.hover-primary(href="activity.html") 
+                                                    i.bi.bi-activity.me-1
+                                                    | Activity
+
+                            .col-12.col-sm-6.col-xl-4
+                                .nft-card.card.featured-card.border-0.bg-gray
+                                    .img-wrap
+                                        img(src="img/bg-img/41.jpg", alt="")
+
+                                        // Badge 
+                                        .badge.bg-danger.position-absolute
+                                            img(src="img/core-img/fire.png", alt="")
+                                            | New
+
+                                        // Dropdown 
+                                        .dropdown
+                                            button.btn.dropdown-toggle.rounded-pill.shadow-sm#dropdownxs2(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                                i.bi.bi-three-dots-vertical
+
+                                            // Dropdown Menu 
+                                            ul.dropdown-menu.dropdown-menu-end(aria-labelledby="dropdownxs2")
+                                                li
+                                                    a.dropdown-item(href="#")
+                                                        i.me-1.bi.bi-share
+                                                        | Share
+                                                li
+                                                    a.dropdown-item(href="#")
+                                                        i.me-1.bi.bi-flag
+                                                        | Report
+                                                li
+                                                    a.dropdown-item(href="#")
+                                                        i.me-1.bi.bi-bookmark
+                                                        | Bookmark
+
+                                    .card-body
+                                        // Others Info 
+                                        .row.gx-2.align-items-center
+                                            .col-8
+                                                span.d-block.fz-12
+                                                    i.bi.bi-arrow-up
+                                                    | Hightest bid 0.78 ETH
+                                            .col-4.text-end
+                                                button.wishlist-btn(type="button")
+                                                    i.bi
+
+                                        // Meta Info 
+                                        .row.gx-2.align-items-center.mt-2
+                                            .col-8
+                                                .name-info.d-flex.align-items-center
+                                                    .author-img.position-relative
+                                                        img.shadow(src="img/bg-img/u2.jpg", alt="")
+                                                        i.bi.bi-check.position-absolute.bg-success
+                                                    .name-author
+                                                        a.name.d-block.hover-primary.fw-bold.text-truncate(href="item-details.html", data-bs-toggle="tooltip", data-bs-placement="top", title="Chicken Wearing Santa Hats") Chicken Wearing Santa Hats
+                                                        a.author.d-block.fz-12.hover-primary.text-truncate(href="author.html") @style_wear
+                                            .col-4
+                                                .price.text-end
+                                                    span.fz-12.d-block Current Bid
+                                                    h6.mb-0 0.96 ETH
+
+                                        // Button 
+                                        .row.gx-2.align-items-center.mt-3
+                                            .col-6
+                                                a.btn.btn-primary.rounded-pill.btn-sm(href="#") Place Bid
+                                            .col-6.text-end
+                                                a.btn.btn-minimal.btn-sm.hover-primary(href="activity.html") 
+                                                    i.bi.bi-activity.me-1
+                                                    | Activity
+
+                            .col-12.col-sm-6.col-xl-4
+                                .nft-card.card.featured-card.border-0.bg-gray
+                                    .img-wrap
+                                        img(src="img/bg-img/42.jpg", alt="")
+
+                                        // Dropdown 
+                                        .dropdown
+                                            button.btn.dropdown-toggle.rounded-pill.shadow-sm#dropdownqw3(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                                i.bi.bi-three-dots-vertical
+
+                                            // Dropdown Menu 
+                                            ul.dropdown-menu.dropdown-menu-end(aria-labelledby="dropdownqw3")
+                                                li
+                                                    a.dropdown-item(href="#")
+                                                        i.me-1.bi.bi-share
+                                                        | Share
+                                                li
+                                                    a.dropdown-item(href="#")
+                                                        i.me-1.bi.bi-flag
+                                                        | Report
+                                                li
+                                                    a.dropdown-item(href="#")
+                                                        i.me-1.bi.bi-bookmark
+                                                        | Bookmark
+
+                                    .card-body
+                                        // Others Info 
+                                        .row.gx-2.align-items-center
+                                            .col-8
+                                                span.d-block.fz-12
+                                                    i.bi.bi-arrow-up
+                                                    | Hightest bid 1.065 ETH
+                                            .col-4.text-end
+                                                button.wishlist-btn(type="button")
+                                                    i.bi
+
+                                        // Meta Info 
+                                        .row.gx-2.align-items-center.mt-2
+                                            .col-8
+                                                .name-info.d-flex.align-items-center
+                                                    .author-img.position-relative
+                                                        img.shadow(src="img/bg-img/u3.jpg", alt="")
+                                                        i.bi.bi-check.position-absolute.bg-success
+                                                    .name-author
+                                                        a.name.d-block.hover-primary.fw-bold.text-truncate(href="item-details.html", data-bs-toggle="tooltip", data-bs-placement="top", title="Diamond Animals") Diamond Animals
+                                                        a.author.d-block.fz-12.hover-primary.text-truncate(href="author.html") @affan
+                                            .col-4
+                                                .price.text-end
+                                                    span.fz-12.d-block Current Bid
+                                                    h6.mb-0 1.065 ETH
+
+                                        // Button 
+                                        .row.gx-2.align-items-center.mt-3
+                                            .col-6
+                                                a.btn.btn-primary.rounded-pill.btn-sm(href="#") Place Bid
+                                            .col-6.text-end
+                                                a.btn.btn-minimal.btn-sm.hover-primary(href="activity.html") 
+                                                    i.bi.bi-activity.me-1
+                                                    | Activity
+
+            .col-12.col-xl-8
+                .card.border-0.shadow-sm
+                    .card-body.p-4.pb-3
+                        .d-flex.align-items-center
+                            img.me-1(src="img/core-img/ethereum.png", alt="")
+                            h5.mb-0 Price History
+
+                        #chart-price
+
+            .col-12.col-md-6.col-xl-4
+                .card.border-0.shadow-sm
+                    .card-body.p-4
+                        .d-flex.align-items-center.justify-content-between.mb-3
+                            h5 Top Seller
+                            a.btn.btn-primary.btn-minimal(href="#") View all
+
+                        // Single Card 
+                        .nft-card.card.seller-card.shadow-sm.mb-4
+                            .card-body
+                                .row.align-items-center.g-3
+                                    .col-4
+                                        .img-wrap
+                                            img(src="img/bg-img/u1.jpg", alt="")
+                                            .badge.bg-danger.position-absolute.px-2.py-1 #1
+
+                                    .col-8
+                                        .name-author
+                                            a.name.d-block.hover-primary.fw-bold.text-truncate(href="#") Designing World
+                                                i.bi.bi-patch-check-fill.ms-2.text-success(data-bs-toggle="tooltip", data-bs-placement="top", title="Verified")
+                                            a.author.d-block.fz-14.hover-primary.text-truncate(href="#") @designing_world
+                                            .price-bid.d-flex.align-items-center.mt-3
+                                                p.mb-0.lh-1.d-flex.align-items-center.fz-14
+                                                    i.me-1.bi.bi-gem
+                                                    | 3,057 Items
+
+                        // Single Card 
+                        .nft-card.card.seller-card.shadow-sm
+                            .card-body
+                                .row.align-items-center.g-3
+                                    .col-4
+                                        .img-wrap
+                                            img(src="img/bg-img/u2.jpg", alt="")
+                                            .badge.bg-danger.position-absolute.px-2.py-1 #2
+
+                                    .col-8
+                                        .name-author
+                                            a.name.d-block.hover-primary.fw-bold.text-truncate(href="#") Art World
+                                                i.bi.bi-patch-check-fill.ms-2.text-success(data-bs-toggle="tooltip", data-bs-placement="top", title="Verified")
+                                            a.author.d-block.fz-14.hover-primary.text-truncate(href="#") @art_world
+                                            .price-bid.d-flex.align-items-center.mt-3
+                                                p.mb-0.lh-1.d-flex.align-items-center.fz-14
+                                                    i.me-1.bi.bi-gem
+                                                    | 671 Items
+
+            .col-12.col-md-6
+                .card.border-0.shadow-sm
+                    .card-body.p-4
+                        h5.mb-3 Top Authors
+
+                        .top-author-slide-wrap
+                            .top-authors-slide
+                                div
+                                    a(href="#")
+                                        img(src="img/bg-img/u1.jpg", alt="")
+                                div
+                                    a(href="#")
+                                        img(src="img/bg-img/u2.jpg", alt="")
+                                div
+                                    a(href="#")
+                                        img(src="img/bg-img/u3.jpg", alt="")
+                                div
+                                    a(href="#")
+                                        img(src="img/bg-img/u4.jpg", alt="")
+                                div
+                                    a(href="#")
+                                        img(src="img/bg-img/u1.jpg", alt="")
+                                div
+                                    a(href="#")
+                                        img(src="img/bg-img/u2.jpg", alt="")
+                                div
+                                    a(href="#")
+                                        img(src="img/bg-img/u3.jpg", alt="")
+                                div
+                                    a(href="#")
+                                        img(src="img/bg-img/u4.jpg", alt="")
+
+            .col-12.col-md-6
+                .card.border-0.shadow-sm
+                    .card-body.p-4
+                        h5.mb-3 Top Buyers
+
+                        .top-buyer-slide-wrap
+                            .top-buyer-slide
+                                div
+                                    a(href="#")
+                                        img(src="img/bg-img/u1.jpg", alt="")
+                                div
+                                    a(href="#")
+                                        img(src="img/bg-img/u2.jpg", alt="")
+                                div
+                                    a(href="#")
+                                        img(src="img/bg-img/u3.jpg", alt="")
+                                div
+                                    a(href="#")
+                                        img(src="img/bg-img/u4.jpg", alt="")
+                                div
+                                    a(href="#")
+                                        img(src="img/bg-img/u1.jpg", alt="")
+                                div
+                                    a(href="#")
+                                        img(src="img/bg-img/u2.jpg", alt="")
+                                div
+                                    a(href="#")
+                                        img(src="img/bg-img/u3.jpg", alt="")
+                                div
+                                    a(href="#")
+                                        img(src="img/bg-img/u4.jpg", alt="")

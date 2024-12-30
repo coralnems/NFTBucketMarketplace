@@ -1,0 +1,99 @@
+.funto-tab-area
+  .container
+    .row
+      .col-12
+        .tab--area.bg-gray.p-4.p-lg-5
+          ul#funtoTab.nav.nav-tabs(role="tablist")
+            li.nav-item
+              a#tab--1.nav-link.rounded-pill.bg-gradient.active(data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true") Details
+            li.nav-item
+              a#tab--2.nav-link.rounded-pill.bg-gradient(data-bs-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false") Activity
+
+          .tab-content
+            // Tab Pane
+            #tab1.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="tab--1")
+              .card.border-0
+                .card-body.p-4
+                  h4 Diamond Horse Animals
+                  p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor modi ut, debitis delectus deserunt ipsa ullam necessitatibus expedita laboriosam mollitia veniam rerum error iste, tempora vitae. Quasi totam exercitationem odit.
+                  p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam consectetur aliquid accusantium aut. A, veritatis voluptates. Blanditiis ut repellat, reprehenderit rem ab cum cumque veniam nulla officiis, quo maxime facilis aut eius labore quisquam nemo ea illum! Reprehenderit officia illo ipsa.
+                  ul
+                    li Bootstrap 5
+                    li Vanilla JS 
+                    li Creative Design
+                  p.mb-0 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae saepe eveniet optio minima, minus quas distinctio iste laudantium in voluptates, corporis labore. Debitis saepe et laudantium, dolor necessitatibus eius porro reiciendis?
+
+            // Tab Pane
+            #tab2.tab-pane.fade(role="tabpanel" aria-labelledby="tab--2")
+              .card
+                .card-body.table-responsive.border.shadow-sm.activity-table
+                  table.table.mb-0
+                    tbody
+                      tr
+                        th(scope="row")
+                          a.btn.btn-minimal.text-dark.hover-primary(href="item-details.html") 
+                            img.rounded.me-1(src="img/bg-img/5.jpg", alt="")
+                            | NFT Logo
+                        td 
+                          span.d-inline-block.fw-bold.fz-14 0.235 ETH
+                        td
+                          a.btn.btn-minimal.text-dark.hover-primary(href="author.html")
+                            img.rounded-pill.me-1(src="img/bg-img/u1.jpg", alt="")
+                            | @creative_art
+                        td
+                          i.bi.bi-cart
+                          | Sales
+                        td
+                          i.bi.bi-clock
+                          | 29 min ago
+                      tr
+                        th(scope="row")
+                          a.btn.btn-minimal.text-dark.hover-primary(href="item-details.html") 
+                            img.rounded.me-1(src="img/bg-img/6.jpg", alt="")
+                            | Pixel Art
+                        td 
+                          span.d-inline-block.fw-bold.fz-14 0.706 ETH
+                        td
+                          a.btn.btn-minimal.text-dark.hover-primary(href="author.html")
+                            img.rounded-pill.me-1(src="img/bg-img/u2.jpg", alt="")
+                            | @designing_world
+                        td
+                          i.bi.bi-percent
+                          | Offer
+                        td
+                          i.bi.bi-clock
+                          | 1h ago
+                      tr
+                        th(scope="row")
+                          a.btn.btn-minimal.text-dark.hover-primary(href="item-details.html") 
+                            img.rounded.me-1(src="img/bg-img/7.jpg", alt="")
+                            | Funny Pigs
+                        td 
+                          span.d-inline-block.fw-bold.fz-14 0.105 ETH
+                        td
+                          a.btn.btn-minimal.text-dark.hover-primary(href="author.html")
+                            img.rounded-pill.me-1(src="img/bg-img/u3.jpg", alt="")
+                            | @art_world
+                        td
+                          i.bi.bi-patch-exclamation
+                          | Alert
+                        td
+                          i.bi.bi-clock
+                          | 2h ago
+                      tr
+                        th(scope="row")
+                          a.btn.btn-minimal.text-dark.hover-primary(href="item-details.html") 
+                            img.rounded.me-1(src="img/bg-img/8.jpg", alt="")
+                            | Fancy Car 2
+                        td 
+                          span.d-inline-block.fw-bold.fz-14 0.95 ETH
+                        td
+                          a.btn.btn-minimal.text-dark.hover-primary(href="author.html")
+                            img.rounded-pill.me-1(src="img/bg-img/u4.jpg", alt="")
+                            | @fancy_car
+                        td
+                          i.bi.bi-cart
+                          | Sales
+                        td
+                          i.bi.bi-clock
+                          | 3h ago

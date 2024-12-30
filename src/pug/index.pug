@@ -1,0 +1,385 @@
+doctype html
+html(lang="en", data-theme="dark")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header.pug
+
+        .welcome-area.pt-120
+            .container
+                .row.align-items-center
+                    .col-12.col-sm-10.col-md-6
+                        .welcome-content.mb-5.mb-md-0
+                            h2(data-aos="fade-up", data-aos-duration="750", data-aos-delay="500") Build an excellent NFTs website with Funto.
+                            p.mb-4(data-aos="fade-up", data-aos-duration="750", data-aos-delay="800") It's crafted with the latest trend of design &amp; coded with all modern approaches.
+                            .hero-btn-group(data-aos="fade-up", data-aos-duration="750", data-aos-delay="1200")
+                                a.btn.btn-primary.rounded-pill.mt-3.me-3(href="home-1.html")
+                                    | Explore Now
+                                    i.ms-2.bi.bi-arrow-right
+                                a.btn.btn-minimal.hover-primary.mt-3(href="dashboard.html")
+                                    i.me-2.bi.bi-pie-chart-fill
+                                    | Go Dashboard
+
+                    .col-12.col-sm-9.col-md-6
+                        .welcome-thumb(data-aos="fade-up", data-aos-duration="750", data-aos-delay="500")
+                            img(src="img/illustrator/2.png", alt="")
+
+        .divider
+
+        .container
+            .border-top
+
+        .divider
+
+        .demo-page-wrapper
+            .container
+                .row.justify-content-center
+                    .col-12.col-sm-10.col-md-8.col-lg-6
+                        .section-heading.text-center
+                            h2 Demo Pages
+                            p There are 35+ beautiful inner pages, two beautiful home pages for your awesome NFTs websites.
+
+            .container
+                .filters-button-group.d-flex.flex-wrap.justify-content-center.mb-5
+                    button.btn.rounded-pill.border-0.mb-2.mx-1.active(type="button" data-filter="*") All
+                    button.btn.rounded-pill.border-0.mb-2.mx-1(type="button" data-filter=".home") Home
+                    button.btn.rounded-pill.border-0.mb-2.mx-1(type="button" data-filter=".dashboard") Dashboard
+                    button.btn.rounded-pill.border-0.mb-2.mx-1(type="button" data-filter=".inner") Inner Pages
+                    button.btn.rounded-pill.border-0.mb-2.mx-1(type="button" data-filter=".blog") Blog
+                    button.btn.rounded-pill.border-0.mb-2.mx-1(type="button" data-filter=".others") Others
+
+                .row.g-4.funto-collection-filter-list
+                    .col-12.col-sm-6.col-lg-4.list-item.home
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="home-1.html" target="_blank")
+                                    img.rounded(src="img/demo-img/home1.png" alt="")
+                                h5.mb-0.mt-3 Home One
+
+                    .col-12.col-sm-6.col-lg-4.list-item.home
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="home-2.html" target="_blank")
+                                    img.rounded(src="img/demo-img/home2.png" alt="")
+                                h5.mb-0.mt-3 Home Two
+
+                    .col-12.col-sm-6.col-lg-4.list-item.inner
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="explore-1.html" target="_blank")
+                                    img.rounded(src="img/demo-img/explore1.png" alt="")
+                                h5.mb-0.mt-3 Explore One
+
+                    .col-12.col-sm-6.col-lg-4.list-item.inner
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="explore-2.html" target="_blank")
+                                    img.rounded(src="img/demo-img/explore2.png" alt="")
+                                h5.mb-0.mt-3 Explore Two
+
+                    .col-12.col-sm-6.col-lg-4.list-item.inner
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="featured-items.html" target="_blank")
+                                    img.rounded(src="img/demo-img/featured.png" alt="")
+                                h5.mb-0.mt-3 Featured Items
+
+                    .col-12.col-sm-6.col-lg-4.list-item.inner
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="live-bidding.html" target="_blank")
+                                    img.rounded(src="img/demo-img/auctions.png" alt="")
+                                h5.mb-0.mt-3 Live Auction
+
+                    .col-12.col-sm-6.col-lg-4.list-item.inner
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="collections.html" target="_blank")
+                                    img.rounded(src="img/demo-img/collections.png" alt="")
+                                h5.mb-0.mt-3 Collections
+
+                    .col-12.col-sm-6.col-lg-4.list-item.inner
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="top-seller.html" target="_blank")
+                                    img.rounded(src="img/demo-img/top-seller.png" alt="")
+                                h5.mb-0.mt-3 Top Seller
+
+                    .col-12.col-sm-6.col-lg-4.list-item.inner
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="top-buyer.html" target="_blank")
+                                    img.rounded(src="img/demo-img/top-buyer.png" alt="")
+                                h5.mb-0.mt-3 Top Buyer
+
+                    .col-12.col-sm-6.col-lg-4.list-item.inner
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="item-details.html" target="_blank")
+                                    img.rounded(src="img/demo-img/item-details.png" alt="")
+                                h5.mb-0.mt-3 Item Details
+
+                    .col-12.col-sm-6.col-lg-4.list-item.dashboard
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="dashboard.html" target="_blank")
+                                    img.rounded(src="img/demo-img/admin.png" alt="")
+                                h5.mb-0.mt-3 Dashboard
+
+                    .col-12.col-sm-6.col-lg-4.list-item.dashboard
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="live-bids.html" target="_blank")
+                                    img.rounded(src="img/demo-img/admin-bids.png" alt="")
+                                h5.mb-0.mt-3 Live Bids
+
+                    .col-12.col-sm-6.col-lg-4.list-item.dashboard
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="my-collection.html" target="_blank")
+                                    img.rounded(src="img/demo-img/admin-collection.png" alt="")
+                                h5.mb-0.mt-3 My Collection
+
+                    .col-12.col-sm-6.col-lg-4.list-item.dashboard
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="my-wallet.html" target="_blank")
+                                    img.rounded(src="img/demo-img/admin-wallet.png" alt="")
+                                h5.mb-0.mt-3 My Wallet
+
+                    .col-12.col-sm-6.col-lg-4.list-item.dashboard
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="notifications.html" target="_blank")
+                                    img.rounded(src="img/demo-img/admin-notifications.png" alt="")
+                                h5.mb-0.mt-3 Notifications
+
+                    .col-12.col-sm-6.col-lg-4.list-item.dashboard
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="settings.html" target="_blank")
+                                    img.rounded(src="img/demo-img/admin-settings.png" alt="")
+                                h5.mb-0.mt-3 Settings
+
+                    .col-12.col-sm-6.col-lg-4.list-item.inner
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="activity.html" target="_blank")
+                                    img.rounded(src="img/demo-img/activity.png" alt="")
+                                h5.mb-0.mt-3 Activity
+
+                    .col-12.col-sm-6.col-lg-4.list-item.inner
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="ranking.html" target="_blank")
+                                    img.rounded(src="img/demo-img/ranking.png" alt="")
+                                h5.mb-0.mt-3 Ranking
+
+                    .col-12.col-sm-6.col-lg-4.list-item.inner
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="create-new.html" target="_blank")
+                                    img.rounded(src="img/demo-img/create.png" alt="")
+                                h5.mb-0.mt-3 Create New
+
+                    .col-12.col-sm-6.col-lg-4.list-item.inner
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="connet-wallet.html" target="_blank")
+                                    img.rounded(src="img/demo-img/wallet.png" alt="")
+                                h5.mb-0.mt-3 Connect Wallet
+
+                    .col-12.col-sm-6.col-lg-4.list-item.inner
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="author.html" target="_blank")
+                                    img.rounded(src="img/demo-img/author.png" alt="")
+                                h5.mb-0.mt-3 Author Profile
+
+                    .col-12.col-sm-6.col-lg-4.list-item.others
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="login.html" target="_blank")
+                                    img.rounded(src="img/demo-img/login.png" alt="")
+                                h5.mb-0.mt-3 Login
+
+                    .col-12.col-sm-6.col-lg-4.list-item.others
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="register.html" target="_blank")
+                                    img.rounded(src="img/demo-img/register.png" alt="")
+                                h5.mb-0.mt-3 Register
+
+                    .col-12.col-sm-6.col-lg-4.list-item.others
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="forget-password.html" target="_blank")
+                                    img.rounded(src="img/demo-img/forget.png" alt="")
+                                h5.mb-0.mt-3 Forget Password
+
+                    .col-12.col-sm-6.col-lg-4.list-item.blog
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="blog.html" target="_blank")
+                                    img.rounded(src="img/demo-img/blog.png" alt="")
+                                h5.mb-0.mt-3 Blog
+
+                    .col-12.col-sm-6.col-lg-4.list-item.blog
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="blog-details.html" target="_blank")
+                                    img.rounded(src="img/demo-img/blog-details.png" alt="")
+                                h5.mb-0.mt-3 Blog Details
+
+                    .col-12.col-sm-6.col-lg-4.list-item.others
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="about.html" target="_blank")
+                                    img.rounded(src="img/demo-img/about.png" alt="")
+                                h5.mb-0.mt-3 About Us
+
+                    .col-12.col-sm-6.col-lg-4.list-item.others
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="contact.html" target="_blank")
+                                    img.rounded(src="img/demo-img/contact.png" alt="")
+                                h5.mb-0.mt-3 Contact
+
+                    .col-12.col-sm-6.col-lg-4.list-item.others
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="coming-soon.html" target="_blank")
+                                    img.rounded(src="img/demo-img/cs.png" alt="")
+                                h5.mb-0.mt-3 Coming Soon
+
+                    .col-12.col-sm-6.col-lg-4.list-item.others
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="newsletter.html" target="_blank")
+                                    img.rounded(src="img/demo-img/newsletter.png" alt="")
+                                h5.mb-0.mt-3 Newsletter
+
+                    .col-12.col-sm-6.col-lg-4.list-item.others
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="privacy.html" target="_blank")
+                                    img.rounded(src="img/demo-img/privacy.png" alt="")
+                                h5.mb-0.mt-3 Privacy Policy
+
+                    .col-12.col-sm-6.col-lg-4.list-item.others
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="terms.html" target="_blank")
+                                    img.rounded(src="img/demo-img/terms.png" alt="")
+                                h5.mb-0.mt-3 Terms
+
+                    .col-12.col-sm-6.col-lg-4.list-item.others
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="404.html" target="_blank")
+                                    img.rounded(src="img/demo-img/404.png" alt="")
+                                h5.mb-0.mt-3 404
+
+                    .col-12.col-sm-6.col-lg-4.list-item.others
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="help-center.html" target="_blank")
+                                    img.rounded(src="img/demo-img/help1.png" alt="")
+                                h5.mb-0.mt-3 Help Center
+
+                    .col-12.col-sm-6.col-lg-4.list-item.others
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="help-questions.html" target="_blank")
+                                    img.rounded(src="img/demo-img/help2.png" alt="")
+                                h5.mb-0.mt-3 Help Question
+
+                    .col-12.col-sm-6.col-lg-4.list-item.others
+                        .card.text-center
+                            .card-body
+                                a.d-block(href="question-details.html" target="_blank")
+                                    img.rounded(src="img/demo-img/help3.png" alt="")
+                                h5.mb-0.mt-3 Question Details
+
+        .divider
+
+        .container
+            .cta-text.bg-gradient.p-4.p-sm-5.bg-primary(data-aos="zoom-in", data-aos-duration="750", data-aos-delay="300")
+                .row.align-items-center
+                    .col-12.col-md-8.col-lg-9
+                        h2.mb-3.mb-md-0(data-aos="fade-up", data-aos-duration="750", data-aos-delay="600") Beautifully designed, SEO-friendly, and easy to use. Create your NFTs website today!
+                    .col-12.col-md-4.col-lg-3
+                        .text-md-end
+                            a.btn.btn-warning.rounded-pill(href="https://themeforest.net/item/funto-html-nft-marketplace/35740238", data-aos="zoom-in", data-aos-duration="750", data-aos-delay="900") Buy Now
+
+        .divider
+
+        .about-area
+            .container
+                .row.g-5
+                    .col-12.col-sm-6.col-xl-3
+                        .card.about-card.shadow-sm(data-aos="fade-up", data-aos-duration="750", data-aos-delay="200")
+                            .card-body.py-5
+                                .icon.bg-info
+                                    img(src="img/demo-img/sm-logo/bootstrap.png", alt="")
+                                h5.mb-0 Bootstrap 5.1.3
+
+                    .col-12.col-sm-6.col-xl-3
+                        .card.about-card.shadow-sm(data-aos="fade-up", data-aos-duration="750", data-aos-delay="250")
+                            .card-body.py-5
+                                .icon.bg-primary
+                                    img(src="img/demo-img/sm-logo/tool.png", alt="")
+                                h5.mb-0 Modern Design
+
+                    .col-12.col-sm-6.col-xl-3
+                        .card.about-card.shadow-sm(data-aos="fade-up", data-aos-duration="750", data-aos-delay="300")
+                            .card-body.py-5
+                                .icon.bg-primary
+                                    img(src="img/demo-img/sm-logo/js.png", alt="")
+                                h5.mb-0 Vanilla JavaScript
+
+                    .col-12.col-sm-6.col-xl-3
+                        .card.about-card.shadow-sm(data-aos="fade-up", data-aos-duration="750", data-aos-delay="350")
+                            .card-body.py-5
+                                .icon.bg-light
+                                    img(src="img/demo-img/sm-logo/dashboard.png", alt="")
+                                h5.mb-0 Dashboard
+
+                    .col-12.col-sm-6.col-xl-3
+                        .card.about-card.shadow-sm(data-aos="fade-up", data-aos-duration="750", data-aos-delay="450")
+                            .card-body.py-5
+                                .icon.bg-text-gray
+                                    img(src="img/demo-img/sm-logo/sass.png", alt="")
+                                h5.mb-0 SCSS
+
+                    .col-12.col-sm-6.col-xl-3
+                        .card.about-card.shadow-sm(data-aos="fade-up", data-aos-duration="750", data-aos-delay="400")
+                            .card-body.py-5
+                                .icon.bg-danger
+                                    img(src="img/demo-img/sm-logo/responsive-design.png", alt="")
+                                h5.mb-0 Smart Responsive
+
+                    .col-12.col-sm-6.col-xl-3
+                        .card.about-card.shadow-sm(data-aos="fade-up", data-aos-duration="750", data-aos-delay="500")
+                            .card-body.py-5
+                                .icon.bg-info
+                                    img(src="img/demo-img/sm-logo/pug.png", alt="")
+                                h5.mb-0 PUG
+
+                    .col-12.col-sm-6.col-xl-3
+                        .card.about-card.shadow-sm(data-aos="fade-up", data-aos-duration="750", data-aos-delay="550")
+                            .card-body.py-5
+                                .icon.bg-warning
+                                    img(src="img/demo-img/sm-logo/bulb.png", alt="")
+                                h5.mb-0 Light Mode
+
+        .divider
+
+        include inc/dark-light-mode.pug
+
+        include inc/footer.pug
+
+        include inc/js-plugins.pug

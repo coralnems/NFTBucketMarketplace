@@ -1,0 +1,348 @@
+doctype html
+html(lang="en", data-theme="dark")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header.pug
+
+        // Breadcrumb 
+        .breadcrumb-wrapper
+            .container
+                .breadcrumb-content
+                    h2.breadcrumb-title Top Buyer
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.justify-content-center
+                            li.breadcrumb-item
+                                a(href="index.html") Home
+                            li.breadcrumb-item.active(aria-current="page") Buyers
+
+        .divider
+
+        .buyer-wrapper
+            .container
+                .row.g-4.justify-content-center
+                    .col-12.col-sm-10.col-md-6.col-lg-5.col-xl-4
+                        .nft-card.card.seller-card.shadow-sm
+                            .card-body
+                                .row.align-items-center.g-3
+                                    .col-4
+                                        .img-wrap
+                                            img(src="img/bg-img/u1.jpg", alt="")
+                                            .badge.bg-danger.position-absolute.px-2.py-1 #1
+
+                                    .col-8
+                                        .name-author
+                                            a.name.d-block.hover-primary.fw-bold.text-truncate(href="#") Creative World
+                                                i.bi.bi-patch-check-fill.ms-2.text-primary(data-bs-toggle="tooltip", data-bs-placement="top", title="Verified")
+                                            a.author.d-block.fz-14.hover-primary.text-truncate(href="#") @creative_world
+                                            .price-bid.d-flex.align-items-center.mt-3
+                                                .price.me-3
+                                                    h6.mb-0.d-inline-block.fz-14.border.border-2.rounded.py-1.px-2 0.638 ETH
+                                                p.mb-0.lh-1.d-flex.align-items-center.fz-14
+                                                    i.me-1.bi.bi-lightning
+                                                    | 197 Items
+
+                    .col-12.col-sm-10.col-md-6.col-lg-5.col-xl-4
+                        .nft-card.card.seller-card.shadow-sm
+                            .card-body
+                                .row.align-items-center.g-3
+                                    .col-4
+                                        .img-wrap
+                                            img(src="img/bg-img/u2.jpg", alt="")
+                                            .badge.bg-danger.position-absolute.px-2.py-1 #2
+
+                                    .col-8
+                                        .name-author
+                                            a.name.d-block.hover-primary.fw-bold.text-truncate(href="#") World of NFT
+                                                i.bi.bi-patch-check-fill.ms-2.text-primary(data-bs-toggle="tooltip", data-bs-placement="top", title="Verified")
+                                            a.author.d-block.fz-14.hover-primary.text-truncate(href="#") @world_of_nft
+                                            .price-bid.d-flex.align-items-center.mt-3
+                                                .price.me-3
+                                                    h6.mb-0.d-inline-block.fz-14.border.border-2.rounded.py-1.px-2 0.638 ETH
+                                                p.mb-0.lh-1.d-flex.align-items-center.fz-14
+                                                    i.me-1.bi.bi-lightning
+                                                    | 164 Items
+
+                    .col-12.col-sm-10.col-md-6.col-lg-5.col-xl-4
+                        .nft-card.card.seller-card.shadow-sm
+                            .card-body
+                                .row.align-items-center.g-3
+                                    .col-4
+                                        .img-wrap
+                                            img(src="img/bg-img/u3.jpg", alt="")
+                                            .badge.bg-danger.position-absolute.px-2.py-1 #3
+
+                                    .col-8
+                                        .name-author
+                                            a.name.d-block.hover-primary.fw-bold.text-truncate(href="#") Designing World
+                                                i.bi.bi-patch-check-fill.ms-2.text-primary(data-bs-toggle="tooltip", data-bs-placement="top", title="Verified")
+                                            a.author.d-block.fz-14.hover-primary.text-truncate(href="#") @designing_world
+                                            .price-bid.d-flex.align-items-center.mt-3
+                                                .price.me-3
+                                                    h6.mb-0.d-inline-block.fz-14.border.border-2.rounded.py-1.px-2 0.638 ETH
+                                                p.mb-0.lh-1.d-flex.align-items-center.fz-14
+                                                    i.me-1.bi.bi-lightning
+                                                    | 86 Items
+
+                    .col-12.col-sm-10.col-md-6.col-lg-5.col-xl-4
+                        .nft-card.card.seller-card.shadow-sm
+                            .card-body
+                                .row.align-items-center.g-3
+                                    .col-4
+                                        .img-wrap
+                                            img(src="img/bg-img/u4.jpg", alt="")
+                                            .badge.bg-danger.position-absolute.px-2.py-1 #4
+
+                                    .col-8
+                                        .name-author
+                                            a.name.d-block.hover-primary.fw-bold.text-truncate(href="#") Designing
+                                                i.bi.bi-patch-check-fill.ms-2.text-primary(data-bs-toggle="tooltip", data-bs-placement="top", title="Verified")
+                                            a.author.d-block.fz-14.hover-primary.text-truncate(href="#") @designing
+                                            .price-bid.d-flex.align-items-center.mt-3
+                                                .price.me-3
+                                                    h6.mb-0.d-inline-block.fz-14.border.border-2.rounded.py-1.px-2 0.638 ETH
+                                                p.mb-0.lh-1.d-flex.align-items-center.fz-14
+                                                    i.me-1.bi.bi-lightning
+                                                    | 197 Items
+
+                    .col-12.col-sm-10.col-md-6.col-lg-5.col-xl-4
+                        .nft-card.card.seller-card.shadow-sm
+                            .card-body
+                                .row.align-items-center.g-3
+                                    .col-4
+                                        .img-wrap
+                                            img(src="img/bg-img/u1.jpg", alt="")
+                                            .badge.bg-danger.position-absolute.px-2.py-1 #5
+
+                                    .col-8
+                                        .name-author
+                                            a.name.d-block.hover-primary.fw-bold.text-truncate(href="#") Pro Photos
+                                                i.bi.bi-patch-check-fill.ms-2.text-primary(data-bs-toggle="tooltip", data-bs-placement="top", title="Verified")
+                                            a.author.d-block.fz-14.hover-primary.text-truncate(href="#") @pro_photos
+                                            .price-bid.d-flex.align-items-center.mt-3
+                                                .price.me-3
+                                                    h6.mb-0.d-inline-block.fz-14.border.border-2.rounded.py-1.px-2 0.638 ETH
+                                                p.mb-0.lh-1.d-flex.align-items-center.fz-14
+                                                    i.me-1.bi.bi-lightning
+                                                    | 164 Items
+
+                    .col-12.col-sm-10.col-md-6.col-lg-5.col-xl-4
+                        .nft-card.card.seller-card.shadow-sm
+                            .card-body
+                                .row.align-items-center.g-3
+                                    .col-4
+                                        .img-wrap
+                                            img(src="img/bg-img/u2.jpg", alt="")
+                                            .badge.bg-danger.position-absolute.px-2.py-1 #6
+
+                                    .col-8
+                                        .name-author
+                                            a.name.d-block.hover-primary.fw-bold.text-truncate(href="#") Nft Crew
+                                                i.bi.bi-patch-check-fill.ms-2.text-primary(data-bs-toggle="tooltip", data-bs-placement="top", title="Verified")
+                                            a.author.d-block.fz-14.hover-primary.text-truncate(href="#") @nft_crew
+                                            .price-bid.d-flex.align-items-center.mt-3
+                                                .price.me-3
+                                                    h6.mb-0.d-inline-block.fz-14.border.border-2.rounded.py-1.px-2 0.638 ETH
+                                                p.mb-0.lh-1.d-flex.align-items-center.fz-14
+                                                    i.me-1.bi.bi-lightning
+                                                    | 86 Items
+
+                    .col-12.col-sm-10.col-md-6.col-lg-5.col-xl-4
+                        .nft-card.card.seller-card.shadow-sm
+                            .card-body
+                                .row.align-items-center.g-3
+                                    .col-4
+                                        .img-wrap
+                                            img(src="img/bg-img/u3.jpg", alt="")
+                                            .badge.bg-danger.position-absolute.px-2.py-1 #7
+
+                                    .col-8
+                                        .name-author
+                                            a.name.d-block.hover-primary.fw-bold.text-truncate(href="#") Fun of NFT
+                                                i.bi.bi-patch-check-fill.ms-2.text-primary(data-bs-toggle="tooltip", data-bs-placement="top", title="Verified")
+                                            a.author.d-block.fz-14.hover-primary.text-truncate(href="#") @fun_of_nft
+                                            .price-bid.d-flex.align-items-center.mt-3
+                                                .price.me-3
+                                                    h6.mb-0.d-inline-block.fz-14.border.border-2.rounded.py-1.px-2 0.638 ETH
+                                                p.mb-0.lh-1.d-flex.align-items-center.fz-14
+                                                    i.me-1.bi.bi-lightning
+                                                    | 197 Items
+
+                    .col-12.col-sm-10.col-md-6.col-lg-5.col-xl-4
+                        .nft-card.card.seller-card.shadow-sm
+                            .card-body
+                                .row.align-items-center.g-3
+                                    .col-4
+                                        .img-wrap
+                                            img(src="img/bg-img/u4.jpg", alt="")
+                                            .badge.bg-danger.position-absolute.px-2.py-1 #8
+
+                                    .col-8
+                                        .name-author
+                                            a.name.d-block.hover-primary.fw-bold.text-truncate(href="#") Pixel
+                                                i.bi.bi-patch-check-fill.ms-2.text-primary(data-bs-toggle="tooltip", data-bs-placement="top", title="Verified")
+                                            a.author.d-block.fz-14.hover-primary.text-truncate(href="#") @pixel
+                                            .price-bid.d-flex.align-items-center.mt-3
+                                                .price.me-3
+                                                    h6.mb-0.d-inline-block.fz-14.border.border-2.rounded.py-1.px-2 0.638 ETH
+                                                p.mb-0.lh-1.d-flex.align-items-center.fz-14
+                                                    i.me-1.bi.bi-lightning
+                                                    | 164 Items
+
+                    .col-12.col-sm-10.col-md-6.col-lg-5.col-xl-4
+                        .nft-card.card.seller-card.shadow-sm
+                            .card-body
+                                .row.align-items-center.g-3
+                                    .col-4
+                                        .img-wrap
+                                            img(src="img/bg-img/u1.jpg", alt="")
+                                            .badge.bg-danger.position-absolute.px-2.py-1 #9
+
+                                    .col-8
+                                        .name-author
+                                            a.name.d-block.hover-primary.fw-bold.text-truncate(href="#") NFT Zone
+                                                i.bi.bi-patch-check-fill.ms-2.text-primary(data-bs-toggle="tooltip", data-bs-placement="top", title="Verified")
+                                            a.author.d-block.fz-14.hover-primary.text-truncate(href="#") @nft_zone
+                                            .price-bid.d-flex.align-items-center.mt-3
+                                                .price.me-3
+                                                    h6.mb-0.d-inline-block.fz-14.border.border-2.rounded.py-1.px-2 0.638 ETH
+                                                p.mb-0.lh-1.d-flex.align-items-center.fz-14
+                                                    i.me-1.bi.bi-lightning
+                                                    | 86 Items
+
+                    .col-12.col-sm-10.col-md-6.col-lg-5.col-xl-4
+                        .nft-card.card.seller-card.shadow-sm
+                            .card-body
+                                .row.align-items-center.g-3
+                                    .col-4
+                                        .img-wrap
+                                            img(src="img/bg-img/u2.jpg", alt="")
+                                            .badge.bg-danger.position-absolute.px-2.py-1 #10
+
+                                    .col-8
+                                        .name-author
+                                            a.name.d-block.hover-primary.fw-bold.text-truncate(href="#") GIF World
+                                                i.bi.bi-patch-check-fill.ms-2.text-primary(data-bs-toggle="tooltip", data-bs-placement="top", title="Verified")
+                                            a.author.d-block.fz-14.hover-primary.text-truncate(href="#") @gif_world
+                                            .price-bid.d-flex.align-items-center.mt-3
+                                                .price.me-3
+                                                    h6.mb-0.d-inline-block.fz-14.border.border-2.rounded.py-1.px-2 0.638 ETH
+                                                p.mb-0.lh-1.d-flex.align-items-center.fz-14
+                                                    i.me-1.bi.bi-lightning
+                                                    | 197 Items
+
+                    .col-12.col-sm-10.col-md-6.col-lg-5.col-xl-4
+                        .nft-card.card.seller-card.shadow-sm
+                            .card-body
+                                .row.align-items-center.g-3
+                                    .col-4
+                                        .img-wrap
+                                            img(src="img/bg-img/u3.jpg", alt="")
+                                            .badge.bg-danger.position-absolute.px-2.py-1 #11
+
+                                    .col-8
+                                        .name-author
+                                            a.name.d-block.hover-primary.fw-bold.text-truncate(href="#") Nft Fun
+                                                i.bi.bi-patch-check-fill.ms-2.text-primary(data-bs-toggle="tooltip", data-bs-placement="top", title="Verified")
+                                            a.author.d-block.fz-14.hover-primary.text-truncate(href="#") @nft_fun
+                                            .price-bid.d-flex.align-items-center.mt-3
+                                                .price.me-3
+                                                    h6.mb-0.d-inline-block.fz-14.border.border-2.rounded.py-1.px-2 0.638 ETH
+                                                p.mb-0.lh-1.d-flex.align-items-center.fz-14
+                                                    i.me-1.bi.bi-lightning
+                                                    | 164 Items
+
+                    .col-12.col-sm-10.col-md-6.col-lg-5.col-xl-4
+                        .nft-card.card.seller-card.shadow-sm
+                            .card-body
+                                .row.align-items-center.g-3
+                                    .col-4
+                                        .img-wrap
+                                            img(src="img/bg-img/u4.jpg", alt="")
+                                            .badge.bg-danger.position-absolute.px-2.py-1 #12
+
+                                    .col-8
+                                        .name-author
+                                            a.name.d-block.hover-primary.fw-bold.text-truncate(href="#") u712
+                                                i.bi.bi-patch-check-fill.ms-2.text-primary(data-bs-toggle="tooltip", data-bs-placement="top", title="Verified")
+                                            a.author.d-block.fz-14.hover-primary.text-truncate(href="#") @u712
+                                            .price-bid.d-flex.align-items-center.mt-3
+                                                .price.me-3
+                                                    h6.mb-0.d-inline-block.fz-14.border.border-2.rounded.py-1.px-2 0.638 ETH
+                                                p.mb-0.lh-1.d-flex.align-items-center.fz-14
+                                                    i.me-1.bi.bi-lightning
+                                                    | 86 Items
+
+                    .col-12.col-sm-10.col-md-6.col-lg-5.col-xl-4
+                        .nft-card.card.seller-card.shadow-sm
+                            .card-body
+                                .row.align-items-center.g-3
+                                    .col-4
+                                        .img-wrap
+                                            img(src="img/bg-img/u1.jpg", alt="")
+                                            .badge.bg-danger.position-absolute.px-2.py-1 #13
+
+                                    .col-8
+                                        .name-author
+                                            a.name.d-block.hover-primary.fw-bold.text-truncate(href="#") Classy Theme
+                                                i.bi.bi-patch-check-fill.ms-2.text-primary(data-bs-toggle="tooltip", data-bs-placement="top", title="Verified")
+                                            a.author.d-block.fz-14.hover-primary.text-truncate(href="#") @classy_theme
+                                            .price-bid.d-flex.align-items-center.mt-3
+                                                .price.me-3
+                                                    h6.mb-0.d-inline-block.fz-14.border.border-2.rounded.py-1.px-2 0.638 ETH
+                                                p.mb-0.lh-1.d-flex.align-items-center.fz-14
+                                                    i.me-1.bi.bi-lightning
+                                                    | 197 Items
+
+                    .col-12.col-sm-10.col-md-6.col-lg-5.col-xl-4
+                        .nft-card.card.seller-card.shadow-sm
+                            .card-body
+                                .row.align-items-center.g-3
+                                    .col-4
+                                        .img-wrap
+                                            img(src="img/bg-img/u2.jpg", alt="")
+                                            .badge.bg-danger.position-absolute.px-2.py-1 #14
+
+                                    .col-8
+                                        .name-author
+                                            a.name.d-block.hover-primary.fw-bold.text-truncate(href="#") Light Gallery
+                                                i.bi.bi-patch-check-fill.ms-2.text-primary(data-bs-toggle="tooltip", data-bs-placement="top", title="Verified")
+                                            a.author.d-block.fz-14.hover-primary.text-truncate(href="#") @light_gallery
+                                            .price-bid.d-flex.align-items-center.mt-3
+                                                .price.me-3
+                                                    h6.mb-0.d-inline-block.fz-14.border.border-2.rounded.py-1.px-2 0.638 ETH
+                                                p.mb-0.lh-1.d-flex.align-items-center.fz-14
+                                                    i.me-1.bi.bi-lightning
+                                                    | 164 Items
+
+                    .col-12.col-sm-10.col-md-6.col-lg-5.col-xl-4
+                        .nft-card.card.seller-card.shadow-sm
+                            .card-body
+                                .row.align-items-center.g-3
+                                    .col-4
+                                        .img-wrap
+                                            img(src="img/bg-img/u3.jpg", alt="")
+                                            .badge.bg-danger.position-absolute.px-2.py-1 #15
+
+                                    .col-8
+                                        .name-author
+                                            a.name.d-block.hover-primary.fw-bold.text-truncate(href="#") Creative World
+                                                i.bi.bi-patch-check-fill.ms-2.text-primary(data-bs-toggle="tooltip", data-bs-placement="top", title="Verified")
+                                            a.author.d-block.fz-14.hover-primary.text-truncate(href="#") @creative_world
+                                            .price-bid.d-flex.align-items-center.mt-3
+                                                .price.me-3
+                                                    h6.mb-0.d-inline-block.fz-14.border.border-2.rounded.py-1.px-2 0.638 ETH
+                                                p.mb-0.lh-1.d-flex.align-items-center.fz-14
+                                                    i.me-1.bi.bi-lightning
+                                                    | 86 Items
+
+        .divider
+
+        include inc/dark-light-mode.pug
+
+        include inc/footer.pug
+
+        include inc/js-plugins.pug

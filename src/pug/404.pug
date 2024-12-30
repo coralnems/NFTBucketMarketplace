@@ -1,0 +1,29 @@
+doctype html
+html(lang="en", data-theme="dark")
+  head
+    include inc/head.pug
+
+  body
+    include inc/loader.pug
+
+    include inc/header.pug
+
+    // Error 
+    .funto-error-area.text-center.pt-120
+      .container
+        .row.justify-content-center
+          .col-12.col-sm-10.col-md-9.col-lg-6
+            img.mb-5(src="img/illustrator/6.png" alt="")
+            h2 Uh oh! Nothing found.
+            p We couldn't find any results for your search. Try again.
+            a.btn.btn-primary.mt-3.rounded-pill(href="index.html")
+              i.me-1.bi.bi-house
+              | Go home
+
+    .divider
+
+    include inc/dark-light-mode.pug
+
+    include inc/footer.pug
+
+    include inc/js-plugins.pug

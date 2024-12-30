@@ -1,0 +1,931 @@
+doctype html
+html(lang="en", data-theme="dark")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header.pug
+
+        // Breadcrumb 
+        .breadcrumb-wrapper
+            .container
+                .breadcrumb-content
+                    .d-flex.align-items-center.justify-content-center
+                        .spinner-grow.text-danger.me-1(role="status")
+                            span.visually-hidden Loading...
+                        h2.breadcrumb-title.mb-0 Live Bids
+
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.justify-content-center
+                            li.breadcrumb-item
+                                a(href="index.html") Home
+                            li.breadcrumb-item.active(aria-current="page") Live Bids
+
+        .divider
+
+        .live-bids-wrapper
+            .container
+                .row.g-4.justify-content-center
+                    .col-12.col-sm-6.col-lg-4.col-xl-3
+                        .nft-card.card.shadow-sm
+                            .card-body
+                                .img-wrap
+                                    img(src="img/bg-img/9.jpg", alt="")
+
+                                    // Badge 
+                                    .badge.bg-dark.position-absolute
+                                        img(src="img/core-img/fire.png", alt="")
+                                        | New Bid
+
+                                    // Dropdown 
+                                    .dropdown
+                                        button.btn.dropdown-toggle.rounded-pill.shadow-sm#dropdowne22(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                            i.bi.bi-three-dots-vertical
+                                        
+                                        // Dropdown Menu 
+                                        ul.dropdown-menu.dropdown-menu-end(aria-labelledby="dropdowne22")
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-share
+                                                    | Share
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-flag
+                                                    | Report
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-bookmark
+                                                    | Bookmark
+
+                                    // Bid End 
+                                    .bid-ends(data-date="March 31, 2025 14:19:54")
+                                        div
+                                            span.days
+                                            span Days
+                                        div
+                                            span.hours
+                                            span Hours
+                                        div
+                                            span.minutes
+                                            span Min
+                                        div
+                                            span.seconds
+                                            span Sec
+                                
+                                // Others Info 
+                                .row.gx-2.align-items-center.mt-3
+                                    .col-8
+                                        span.d-block.fz-12
+                                            i.bi.bi-bag.me-1
+                                            | 3 stock available
+                                    .col-4.text-end
+                                        button.wishlist-btn(type="button")
+                                            i.bi
+                                
+                                // Meta Info 
+                                .row.gx-2.align-items-center.mt-2
+                                    .col-8
+                                        .name-info.d-flex.align-items-center
+                                            .author-img.position-relative
+                                                img.shadow(src="img/bg-img/u4.jpg", alt="")
+                                                i.bi.bi-check.position-absolute.bg-success
+                                            .name-author
+                                                a.name.d-block.hover-primary.fw-bold.text-truncate(href="item-details.html", data-bs-toggle="tooltip", data-bs-placement="top", title="Fancy Car") Fancy Car
+                                                a.author.d-block.fz-12.hover-primary.text-truncate(href="author.html") @fancy_car
+                                    .col-4
+                                        .price.text-end
+                                            span.fz-12.d-block Current Bid
+                                            h6.mb-0 0.784 ETH
+                                    
+                                    .col-12
+                                        a.btn.btn-primary.rounded-pill.btn-sm.mt-3.w-100(href="#") Place Bid
+
+                    .col-12.col-sm-6.col-lg-4.col-xl-3
+                        .nft-card.card.shadow-sm
+                            .card-body
+                                .img-wrap
+                                    img(src="img/bg-img/10.jpg", alt="")
+
+                                    // Badge 
+                                    .badge.bg-dark.position-absolute
+                                        img(src="img/core-img/fire.png", alt="")
+                                        | New Bid
+
+                                    // Dropdown 
+                                    .dropdown
+                                        button.btn.dropdown-toggle.rounded-pill.shadow-sm#dropdown422(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                            i.bi.bi-three-dots-vertical
+                                        
+                                        // Dropdown Menu 
+                                        ul.dropdown-menu.dropdown-menu-end(aria-labelledby="dropdown422")
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-share
+                                                    | Share
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-flag
+                                                    | Report
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-bookmark
+                                                    | Bookmark
+
+                                    // Bid End 
+                                    .bid-ends(data-date="April 4, 2025 00:00:00")
+                                        div
+                                            span.days
+                                            span Days
+                                        div
+                                            span.hours
+                                            span Hours
+                                        div
+                                            span.minutes
+                                            span Min
+                                        div
+                                            span.seconds
+                                            span Sec
+                                
+                                // Others Info 
+                                .row.gx-2.align-items-center.mt-3
+                                    .col-8
+                                        span.d-block.fz-12
+                                            i.bi.bi-bag.me-1
+                                            | 11 stock available
+                                    .col-4.text-end
+                                        button.wishlist-btn.active(type="button")
+                                            i.bi
+                                
+                                // Meta Info 
+                                .row.gx-2.align-items-center.mt-2
+                                    .col-8
+                                        .name-info.d-flex.align-items-center
+                                            .author-img.position-relative
+                                                img.shadow(src="img/bg-img/u1.jpg", alt="")
+                                                i.bi.bi-check.position-absolute.bg-success
+                                            .name-author
+                                                a.name.d-block.hover-primary.fw-bold.text-truncate(href="item-details.html", data-bs-toggle="tooltip", data-bs-placement="top", title="Animal Playing with Guiter") Animal Playing with Guiter
+                                                a.author.d-block.fz-12.hover-primary.text-truncate(href="author.html") @creative_world
+                                    .col-4
+                                        .price.text-end
+                                            span.fz-12.d-block Current Bid
+                                            h6.mb-0 0.784 ETH
+                                    
+                                    .col-12
+                                        a.btn.btn-primary.rounded-pill.btn-sm.mt-3.w-100(href="#") Place Bid
+
+                    .col-12.col-sm-6.col-lg-4.col-xl-3
+                        .nft-card.card.shadow-sm
+                            .card-body
+                                .img-wrap
+                                    img(src="img/bg-img/11.jpg", alt="")
+
+                                    // Badge 
+                                    .badge.bg-danger.position-absolute
+                                        img(src="img/core-img/fire.png", alt="")
+                                        | Bid Done
+
+                                    // Dropdown 
+                                    .dropdown
+                                        button.btn.dropdown-toggle.rounded-pill.shadow-sm#dropdown922(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                            i.bi.bi-three-dots-vertical
+                                        
+                                        // Dropdown Menu 
+                                        ul.dropdown-menu.dropdown-menu-end(aria-labelledby="dropdown922")
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-share
+                                                    | Share
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-flag
+                                                    | Report
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-bookmark
+                                                    | Bookmark
+
+                                    // Bid End 
+                                    .bid-ends(data-date="Feb 28, 2025 12:34:00")
+                                        div
+                                            span.days
+                                            span Days
+                                        div
+                                            span.hours
+                                            span Hours
+                                        div
+                                            span.minutes
+                                            span Min
+                                        div
+                                            span.seconds
+                                            span Sec
+                                
+                                // Others Info 
+                                .row.gx-2.align-items-center.mt-3
+                                    .col-8
+                                        span.d-block.fz-12
+                                            i.bi.bi-bag.me-1
+                                            | Not available
+                                    .col-4.text-end
+                                        button.wishlist-btn(type="button")
+                                            i.bi
+                                
+                                // Meta Info 
+                                .row.gx-2.align-items-center.mt-2
+                                    .col-8
+                                        .name-info.d-flex.align-items-center
+                                            .author-img.position-relative
+                                                img.shadow(src="img/bg-img/u2.jpg", alt="")
+                                                i.bi.bi-check.position-absolute.bg-success
+                                            .name-author
+                                                a.name.d-block.hover-primary.fw-bold.text-truncate(href="item-details.html", data-bs-toggle="tooltip", data-bs-placement="top", title="Halloween #471") Halloween #471
+                                                a.author.d-block.fz-12.hover-primary.text-truncate(href="author.html") @fancy_car
+                                    .col-4
+                                        .price.text-end
+                                            span.fz-12.d-block Current Bid
+                                            h6.mb-0 0.784 ETH
+                                    
+                                    .col-12
+                                        a.btn.btn-primary.rounded-pill.btn-sm.mt-3.w-100.disabled(href="#") Place Bid
+
+                    .col-12.col-sm-6.col-lg-4.col-xl-3
+                        .nft-card.card.shadow-sm
+                            .card-body
+                                .img-wrap
+                                    img(src="img/bg-img/12.jpg", alt="")
+
+                                    // Badge 
+                                    .badge.bg-danger.position-absolute
+                                        img(src="img/core-img/fire.png", alt="")
+                                        | Hot Bid
+
+                                    // Dropdown 
+                                    .dropdown
+                                        button.btn.dropdown-toggle.rounded-pill.shadow-sm#dropdowne3222(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                            i.bi.bi-three-dots-vertical
+                                        
+                                        // Dropdown Menu 
+                                        ul.dropdown-menu.dropdown-menu-end(aria-labelledby="dropdowne3222")
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-share
+                                                    | Share
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-flag
+                                                    | Report
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-bookmark
+                                                    | Bookmark
+
+                                    // Bid End 
+                                    .bid-ends(data-date="December 31, 2025 14:19:39")
+                                        div
+                                            span.days
+                                            span Days
+                                        div
+                                            span.hours
+                                            span Hours
+                                        div
+                                            span.minutes
+                                            span Min
+                                        div
+                                            span.seconds
+                                            span Sec
+                                
+                                // Others Info 
+                                .row.gx-2.align-items-center.mt-3
+                                    .col-8
+                                        span.d-block.fz-12
+                                            i.bi.bi-bag.me-1
+                                            | 29 stock available
+                                    .col-4.text-end
+                                        button.wishlist-btn(type="button")
+                                            i.bi
+                                
+                                // Meta Info 
+                                .row.gx-2.align-items-center.mt-2
+                                    .col-8
+                                        .name-info.d-flex.align-items-center
+                                            .author-img.position-relative
+                                                img.shadow(src="img/bg-img/u3.jpg", alt="")
+                                                i.bi.bi-check.position-absolute.bg-success
+                                            .name-author
+                                                a.name.d-block.hover-primary.fw-bold.text-truncate(href="item-details.html", data-bs-toggle="tooltip", data-bs-placement="top", title="Vigor Dance") Vigor Dance
+                                                a.author.d-block.fz-12.hover-primary.text-truncate(href="author.html") @fancy_nft
+                                    .col-4
+                                        .price.text-end
+                                            span.fz-12.d-block Current Bid
+                                            h6.mb-0 0.784 ETH
+                                    
+                                    .col-12
+                                        a.btn.btn-warning.rounded-pill.btn-sm.mt-3.w-100(href="#") Place Bid
+                    
+                    .col-12.col-sm-6.col-lg-4.col-xl-3
+                        .nft-card.card.shadow-sm
+                            .card-body
+                                .img-wrap
+                                    img(src="img/bg-img/9.jpg", alt="")
+
+                                    // Badge 
+                                    .badge.bg-dark.position-absolute
+                                        img(src="img/core-img/fire.png", alt="")
+                                        | New Bid
+
+                                    // Dropdown 
+                                    .dropdown
+                                        button.btn.dropdown-toggle.rounded-pill.shadow-sm#dropdownty22(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                            i.bi.bi-three-dots-vertical
+                                        
+                                        // Dropdown Menu 
+                                        ul.dropdown-menu.dropdown-menu-end(aria-labelledby="dropdownty22")
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-share
+                                                    | Share
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-flag
+                                                    | Report
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-bookmark
+                                                    | Bookmark
+
+                                    // Bid End 
+                                    .bid-ends(data-date="March 31, 2025 14:19:54")
+                                        div
+                                            span.days
+                                            span Days
+                                        div
+                                            span.hours
+                                            span Hours
+                                        div
+                                            span.minutes
+                                            span Min
+                                        div
+                                            span.seconds
+                                            span Sec
+                                
+                                // Others Info 
+                                .row.gx-2.align-items-center.mt-3
+                                    .col-8
+                                        span.d-block.fz-12
+                                            i.bi.bi-bag.me-1
+                                            | 3 stock available
+                                    .col-4.text-end
+                                        button.wishlist-btn(type="button")
+                                            i.bi
+                                
+                                // Meta Info 
+                                .row.gx-2.align-items-center.mt-2
+                                    .col-8
+                                        .name-info.d-flex.align-items-center
+                                            .author-img.position-relative
+                                                img.shadow(src="img/bg-img/u4.jpg", alt="")
+                                                i.bi.bi-check.position-absolute.bg-success
+                                            .name-author
+                                                a.name.d-block.hover-primary.fw-bold.text-truncate(href="item-details.html", data-bs-toggle="tooltip", data-bs-placement="top", title="Fancy Car") Fancy Car
+                                                a.author.d-block.fz-12.hover-primary.text-truncate(href="author.html") @fancy_car
+                                    .col-4
+                                        .price.text-end
+                                            span.fz-12.d-block Current Bid
+                                            h6.mb-0 0.784 ETH
+                                    
+                                    .col-12
+                                        a.btn.btn-primary.rounded-pill.btn-sm.mt-3.w-100(href="#") Place Bid
+
+                    .col-12.col-sm-6.col-lg-4.col-xl-3
+                        .nft-card.card.shadow-sm
+                            .card-body
+                                .img-wrap
+                                    img(src="img/bg-img/10.jpg", alt="")
+
+                                    // Badge 
+                                    .badge.bg-dark.position-absolute
+                                        img(src="img/core-img/fire.png", alt="")
+                                        | New Bid
+
+                                    // Dropdown 
+                                    .dropdown
+                                        button.btn.dropdown-toggle.rounded-pill.shadow-sm#dropdownx22(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                            i.bi.bi-three-dots-vertical
+                                        
+                                        // Dropdown Menu 
+                                        ul.dropdown-menu.dropdown-menu-end(aria-labelledby="dropdownx22")
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-share
+                                                    | Share
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-flag
+                                                    | Report
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-bookmark
+                                                    | Bookmark
+
+                                    // Bid End 
+                                    .bid-ends(data-date="April 4, 2025 00:00:00")
+                                        div
+                                            span.days
+                                            span Days
+                                        div
+                                            span.hours
+                                            span Hours
+                                        div
+                                            span.minutes
+                                            span Min
+                                        div
+                                            span.seconds
+                                            span Sec
+                                
+                                // Others Info 
+                                .row.gx-2.align-items-center.mt-3
+                                    .col-8
+                                        span.d-block.fz-12
+                                            i.bi.bi-bag.me-1
+                                            | 11 stock available
+                                    .col-4.text-end
+                                        button.wishlist-btn.active(type="button")
+                                            i.bi
+                                
+                                // Meta Info 
+                                .row.gx-2.align-items-center.mt-2
+                                    .col-8
+                                        .name-info.d-flex.align-items-center
+                                            .author-img.position-relative
+                                                img.shadow(src="img/bg-img/u1.jpg", alt="")
+                                                i.bi.bi-check.position-absolute.bg-success
+                                            .name-author
+                                                a.name.d-block.hover-primary.fw-bold.text-truncate(href="item-details.html", data-bs-toggle="tooltip", data-bs-placement="top", title="Animal Playing with Guiter") Animal Playing with Guiter
+                                                a.author.d-block.fz-12.hover-primary.text-truncate(href="author.html") @creative_world
+                                    .col-4
+                                        .price.text-end
+                                            span.fz-12.d-block Current Bid
+                                            h6.mb-0 0.784 ETH
+                                    
+                                    .col-12
+                                        a.btn.btn-primary.rounded-pill.btn-sm.mt-3.w-100(href="#") Place Bid
+
+                    .col-12.col-sm-6.col-lg-4.col-xl-3
+                        .nft-card.card.shadow-sm
+                            .card-body
+                                .img-wrap
+                                    img(src="img/bg-img/11.jpg", alt="")
+
+                                    // Badge 
+                                    .badge.bg-danger.position-absolute
+                                        img(src="img/core-img/fire.png", alt="")
+                                        | Bid Done
+
+                                    // Dropdown 
+                                    .dropdown
+                                        button.btn.dropdown-toggle.rounded-pill.shadow-sm#dropdownxx22(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                            i.bi.bi-three-dots-vertical
+                                        
+                                        // Dropdown Menu 
+                                        ul.dropdown-menu.dropdown-menu-end(aria-labelledby="dropdownxx22")
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-share
+                                                    | Share
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-flag
+                                                    | Report
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-bookmark
+                                                    | Bookmark
+
+                                    // Bid End 
+                                    .bid-ends(data-date="Feb 28, 2025 12:34:00")
+                                        div
+                                            span.days
+                                            span Days
+                                        div
+                                            span.hours
+                                            span Hours
+                                        div
+                                            span.minutes
+                                            span Min
+                                        div
+                                            span.seconds
+                                            span Sec
+                                
+                                // Others Info 
+                                .row.gx-2.align-items-center.mt-3
+                                    .col-8
+                                        span.d-block.fz-12
+                                            i.bi.bi-bag.me-1
+                                            | Not available
+                                    .col-4.text-end
+                                        button.wishlist-btn(type="button")
+                                            i.bi
+                                
+                                // Meta Info 
+                                .row.gx-2.align-items-center.mt-2
+                                    .col-8
+                                        .name-info.d-flex.align-items-center
+                                            .author-img.position-relative
+                                                img.shadow(src="img/bg-img/u2.jpg", alt="")
+                                                i.bi.bi-check.position-absolute.bg-success
+                                            .name-author
+                                                a.name.d-block.hover-primary.fw-bold.text-truncate(href="item-details.html", data-bs-toggle="tooltip", data-bs-placement="top", title="Halloween #471") Halloween #471
+                                                a.author.d-block.fz-12.hover-primary.text-truncate(href="author.html") @fancy_car
+                                    .col-4
+                                        .price.text-end
+                                            span.fz-12.d-block Current Bid
+                                            h6.mb-0 0.784 ETH
+                                    
+                                    .col-12
+                                        a.btn.btn-primary.rounded-pill.btn-sm.mt-3.w-100.disabled(href="#") Place Bid
+
+                    .col-12.col-sm-6.col-lg-4.col-xl-3
+                        .nft-card.card.shadow-sm
+                            .card-body
+                                .img-wrap
+                                    img(src="img/bg-img/12.jpg", alt="")
+
+                                    // Badge 
+                                    .badge.bg-danger.position-absolute
+                                        img(src="img/core-img/fire.png", alt="")
+                                        | Hot Bid
+
+                                    // Dropdown 
+                                    .dropdown
+                                        button.btn.dropdown-toggle.rounded-pill.shadow-sm#dropdowngg22(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                            i.bi.bi-three-dots-vertical
+                                        
+                                        // Dropdown Menu 
+                                        ul.dropdown-menu.dropdown-menu-end(aria-labelledby="dropdowngg22")
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-share
+                                                    | Share
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-flag
+                                                    | Report
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-bookmark
+                                                    | Bookmark
+
+                                    // Bid End 
+                                    .bid-ends(data-date="December 31, 2025 14:19:39")
+                                        div
+                                            span.days
+                                            span Days
+                                        div
+                                            span.hours
+                                            span Hours
+                                        div
+                                            span.minutes
+                                            span Min
+                                        div
+                                            span.seconds
+                                            span Sec
+                                
+                                // Others Info 
+                                .row.gx-2.align-items-center.mt-3
+                                    .col-8
+                                        span.d-block.fz-12
+                                            i.bi.bi-bag.me-1
+                                            | 29 stock available
+                                    .col-4.text-end
+                                        button.wishlist-btn(type="button")
+                                            i.bi
+                                
+                                // Meta Info 
+                                .row.gx-2.align-items-center.mt-2
+                                    .col-8
+                                        .name-info.d-flex.align-items-center
+                                            .author-img.position-relative
+                                                img.shadow(src="img/bg-img/u3.jpg", alt="")
+                                                i.bi.bi-check.position-absolute.bg-success
+                                            .name-author
+                                                a.name.d-block.hover-primary.fw-bold.text-truncate(href="item-details.html", data-bs-toggle="tooltip", data-bs-placement="top", title="Vigor Dance") Vigor Dance
+                                                a.author.d-block.fz-12.hover-primary.text-truncate(href="author.html") @fancy_nft
+                                    .col-4
+                                        .price.text-end
+                                            span.fz-12.d-block Current Bid
+                                            h6.mb-0 0.784 ETH
+                                    
+                                    .col-12
+                                        a.btn.btn-warning.rounded-pill.btn-sm.mt-3.w-100(href="#") Place Bid
+                    
+                    .col-12.col-sm-6.col-lg-4.col-xl-3
+                        .nft-card.card.shadow-sm
+                            .card-body
+                                .img-wrap
+                                    img(src="img/bg-img/9.jpg", alt="")
+
+                                    // Badge 
+                                    .badge.bg-dark.position-absolute
+                                        img(src="img/core-img/fire.png", alt="")
+                                        | New Bid
+
+                                    // Dropdown 
+                                    .dropdown
+                                        button.btn.dropdown-toggle.rounded-pill.shadow-sm#dropdownhh22(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                            i.bi.bi-three-dots-vertical
+                                        
+                                        // Dropdown Menu 
+                                        ul.dropdown-menu.dropdown-menu-end(aria-labelledby="dropdownhh22")
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-share
+                                                    | Share
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-flag
+                                                    | Report
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-bookmark
+                                                    | Bookmark
+
+                                    // Bid End 
+                                    .bid-ends(data-date="March 31, 2025 14:19:54")
+                                        div
+                                            span.days
+                                            span Days
+                                        div
+                                            span.hours
+                                            span Hours
+                                        div
+                                            span.minutes
+                                            span Min
+                                        div
+                                            span.seconds
+                                            span Sec
+                                
+                                // Others Info 
+                                .row.gx-2.align-items-center.mt-3
+                                    .col-8
+                                        span.d-block.fz-12
+                                            i.bi.bi-bag.me-1
+                                            | 3 stock available
+                                    .col-4.text-end
+                                        button.wishlist-btn(type="button")
+                                            i.bi
+                                
+                                // Meta Info 
+                                .row.gx-2.align-items-center.mt-2
+                                    .col-8
+                                        .name-info.d-flex.align-items-center
+                                            .author-img.position-relative
+                                                img.shadow(src="img/bg-img/u4.jpg", alt="")
+                                                i.bi.bi-check.position-absolute.bg-success
+                                            .name-author
+                                                a.name.d-block.hover-primary.fw-bold.text-truncate(href="item-details.html", data-bs-toggle="tooltip", data-bs-placement="top", title="Fancy Car") Fancy Car
+                                                a.author.d-block.fz-12.hover-primary.text-truncate(href="author.html") @fancy_car
+                                    .col-4
+                                        .price.text-end
+                                            span.fz-12.d-block Current Bid
+                                            h6.mb-0 0.784 ETH
+                                    
+                                    .col-12
+                                        a.btn.btn-primary.rounded-pill.btn-sm.mt-3.w-100(href="#") Place Bid
+
+                    .col-12.col-sm-6.col-lg-4.col-xl-3
+                        .nft-card.card.shadow-sm
+                            .card-body
+                                .img-wrap
+                                    img(src="img/bg-img/10.jpg", alt="")
+
+                                    // Badge 
+                                    .badge.bg-dark.position-absolute
+                                        img(src="img/core-img/fire.png", alt="")
+                                        | New Bid
+
+                                    // Dropdown 
+                                    .dropdown
+                                        button.btn.dropdown-toggle.rounded-pill.shadow-sm#dropdownww22(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                            i.bi.bi-three-dots-vertical
+                                        
+                                        // Dropdown Menu 
+                                        ul.dropdown-menu.dropdown-menu-end(aria-labelledby="dropdownww22")
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-share
+                                                    | Share
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-flag
+                                                    | Report
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-bookmark
+                                                    | Bookmark
+
+                                    // Bid End 
+                                    .bid-ends(data-date="April 4, 2025 00:00:00")
+                                        div
+                                            span.days
+                                            span Days
+                                        div
+                                            span.hours
+                                            span Hours
+                                        div
+                                            span.minutes
+                                            span Min
+                                        div
+                                            span.seconds
+                                            span Sec
+                                
+                                // Others Info 
+                                .row.gx-2.align-items-center.mt-3
+                                    .col-8
+                                        span.d-block.fz-12
+                                            i.bi.bi-bag.me-1
+                                            | 11 stock available
+                                    .col-4.text-end
+                                        button.wishlist-btn.active(type="button")
+                                            i.bi
+                                
+                                // Meta Info 
+                                .row.gx-2.align-items-center.mt-2
+                                    .col-8
+                                        .name-info.d-flex.align-items-center
+                                            .author-img.position-relative
+                                                img.shadow(src="img/bg-img/u1.jpg", alt="")
+                                                i.bi.bi-check.position-absolute.bg-success
+                                            .name-author
+                                                a.name.d-block.hover-primary.fw-bold.text-truncate(href="item-details.html", data-bs-toggle="tooltip", data-bs-placement="top", title="Animal Playing with Guiter") Animal Playing with Guiter
+                                                a.author.d-block.fz-12.hover-primary.text-truncate(href="author.html") @creative_world
+                                    .col-4
+                                        .price.text-end
+                                            span.fz-12.d-block Current Bid
+                                            h6.mb-0 0.784 ETH
+                                    
+                                    .col-12
+                                        a.btn.btn-primary.rounded-pill.btn-sm.mt-3.w-100(href="#") Place Bid
+
+                    .col-12.col-sm-6.col-lg-4.col-xl-3
+                        .nft-card.card.shadow-sm
+                            .card-body
+                                .img-wrap
+                                    img(src="img/bg-img/11.jpg", alt="")
+
+                                    // Badge 
+                                    .badge.bg-danger.position-absolute
+                                        img(src="img/core-img/fire.png", alt="")
+                                        | Bid Done
+
+                                    // Dropdown 
+                                    .dropdown
+                                        button.btn.dropdown-toggle.rounded-pill.shadow-sm#dropdownaa22(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                            i.bi.bi-three-dots-vertical
+                                        
+                                        // Dropdown Menu 
+                                        ul.dropdown-menu.dropdown-menu-end(aria-labelledby="dropdownaa22")
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-share
+                                                    | Share
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-flag
+                                                    | Report
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-bookmark
+                                                    | Bookmark
+
+                                    // Bid End 
+                                    .bid-ends(data-date="Feb 28, 2025 12:34:00")
+                                        div
+                                            span.days
+                                            span Days
+                                        div
+                                            span.hours
+                                            span Hours
+                                        div
+                                            span.minutes
+                                            span Min
+                                        div
+                                            span.seconds
+                                            span Sec
+                                
+                                // Others Info 
+                                .row.gx-2.align-items-center.mt-3
+                                    .col-8
+                                        span.d-block.fz-12
+                                            i.bi.bi-bag.me-1
+                                            | Not available
+                                    .col-4.text-end
+                                        button.wishlist-btn(type="button")
+                                            i.bi
+                                
+                                // Meta Info 
+                                .row.gx-2.align-items-center.mt-2
+                                    .col-8
+                                        .name-info.d-flex.align-items-center
+                                            .author-img.position-relative
+                                                img.shadow(src="img/bg-img/u2.jpg", alt="")
+                                                i.bi.bi-check.position-absolute.bg-success
+                                            .name-author
+                                                a.name.d-block.hover-primary.fw-bold.text-truncate(href="item-details.html", data-bs-toggle="tooltip", data-bs-placement="top", title="Halloween #471") Halloween #471
+                                                a.author.d-block.fz-12.hover-primary.text-truncate(href="author.html") @fancy_car
+                                    .col-4
+                                        .price.text-end
+                                            span.fz-12.d-block Current Bid
+                                            h6.mb-0 0.784 ETH
+                                    
+                                    .col-12
+                                        a.btn.btn-primary.rounded-pill.btn-sm.mt-3.w-100.disabled(href="#") Place Bid
+
+                    .col-12.col-sm-6.col-lg-4.col-xl-3
+                        .nft-card.card.shadow-sm
+                            .card-body
+                                .img-wrap
+                                    img(src="img/bg-img/12.jpg", alt="")
+
+                                    // Badge 
+                                    .badge.bg-danger.position-absolute
+                                        img(src="img/core-img/fire.png", alt="")
+                                        | Hot Bid
+
+                                    // Dropdown 
+                                    .dropdown
+                                        button.btn.dropdown-toggle.rounded-pill.shadow-sm#dropdowngh22(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                                            i.bi.bi-three-dots-vertical
+                                        
+                                        // Dropdown Menu 
+                                        ul.dropdown-menu.dropdown-menu-end(aria-labelledby="dropdowngh22")
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-share
+                                                    | Share
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-flag
+                                                    | Report
+                                            li
+                                                a.dropdown-item(href="#")
+                                                    i.me-1.bi.bi-bookmark
+                                                    | Bookmark
+
+                                    // Bid End 
+                                    .bid-ends(data-date="December 31, 2025 14:19:39")
+                                        div
+                                            span.days
+                                            span Days
+                                        div
+                                            span.hours
+                                            span Hours
+                                        div
+                                            span.minutes
+                                            span Min
+                                        div
+                                            span.seconds
+                                            span Sec
+                                
+                                // Others Info 
+                                .row.gx-2.align-items-center.mt-3
+                                    .col-8
+                                        span.d-block.fz-12
+                                            i.bi.bi-bag.me-1
+                                            | 29 stock available
+                                    .col-4.text-end
+                                        button.wishlist-btn(type="button")
+                                            i.bi
+                                
+                                // Meta Info 
+                                .row.gx-2.align-items-center.mt-2
+                                    .col-8
+                                        .name-info.d-flex.align-items-center
+                                            .author-img.position-relative
+                                                img.shadow(src="img/bg-img/u3.jpg", alt="")
+                                                i.bi.bi-check.position-absolute.bg-success
+                                            .name-author
+                                                a.name.d-block.hover-primary.fw-bold.text-truncate(href="item-details.html", data-bs-toggle="tooltip", data-bs-placement="top", title="Vigor Dance") Vigor Dance
+                                                a.author.d-block.fz-12.hover-primary.text-truncate(href="author.html") @fancy_nft
+                                    .col-4
+                                        .price.text-end
+                                            span.fz-12.d-block Current Bid
+                                            h6.mb-0 0.784 ETH
+                                    
+                                    .col-12
+                                        a.btn.btn-warning.rounded-pill.btn-sm.mt-3.w-100(href="#") Place Bid
+
+            .container
+                .text-center.mt-70
+                    a.btn.btn-primary.btn-sm.rounded-pill(href="#")
+                        | Load more
+                        i.ms-1.bi.bi-arrow-repeat
+
+        .divider
+
+        include inc/dark-light-mode.pug
+        
+        include inc/footer.pug
+
+        include inc/js-plugins.pug

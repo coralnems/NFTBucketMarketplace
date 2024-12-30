@@ -1,0 +1,71 @@
+// Header Wrapper 
+header.header-area.dashboard-header.px-0.px-sm-0
+    nav.navbar.navbar-expand-lg
+        .container-fluid
+            div.d-flex.align-items-center
+                // Brand Logo 
+                .admin-logo.me-1.me-sm-3
+                    img(src="img/core-img/dashboard-logo.png", alt="")
+
+                // Search Form 
+                .search-form.position-relative.d-flex.align-items-center
+                    input.form-control(type="text" placeholder="Search")
+                    button.position-absolute(type="submit")
+                        i.bi.bi-search
+
+            // Header Meta 
+            .header-meta.d-flex.align-items-center
+                // Notification 
+                .user-dropdown.dropdown.mx-2.mx-sm-3
+                    button.btn.dropdown-toggle.user-btn#dd10(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                        img(src="img/core-img/notification.png", alt="")
+                    ul.dropdown-menu.noti-dd-menu.dropdown-menu-end.mt-3(aria-labelledby="dd10")
+                        li
+                            a.dropdown-item(href="#")
+                                i.me-2.bi.bi-percent
+                                | You have an offer!
+                        li
+                            a.dropdown-item(href="#")
+                                i.bg-info.me-2.bi.bi-tags
+                                | Congratulations! You sale an item.
+                        li
+                            a.dropdown-item(href="#")
+                                i.bg-danger.me-2.bi.bi-gift
+                                | January freebies have arrived.
+                        li
+                            a.dropdown-item(href="#")
+                                i.bg-warning.me-2.bi.bi-star
+                                | A new rating has been received.
+                        li
+                            a.dropdown-item.justify-content-center(href="notifications.html") View all notifications
+
+                // User Dropdown 
+                .user-dropdown.dropdown
+                    button.btn.dropdown-toggle.user-btn#dd20(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                        img(src="img/core-img/user.png", alt="")
+                    ul.dropdown-menu.dropdown-menu-end.mt-3(aria-labelledby="dd20")
+                        li
+                            a.dropdown-item(href="dashboard.html")
+                                i.me-2.bi.bi-person-circle
+                                | Dashboard
+                        li
+                            a.dropdown-item(href="live-bids.html")
+                                i.me-2.bi.bi-hammer
+                                | My bids
+                        li
+                            a.dropdown-item(href="my-collection.html")
+                                i.me-2.bi.bi-collection
+                                | Collection
+                        li
+                            a.dropdown-item(href="settings.html")
+                                i.me-2.bi.bi-gear
+                                | Settings
+
+                // Menu Toggler 
+                .menu-toggler.ms-2.ms-sm-3#dashboardMenuTrigger
+                    i.bi.bi-list
+                
+                // Button 
+                a.btn.btn-sm.btn-danger.rounded-pill.ms-2.ms-sm-3.d-none.d-sm-block(href="home-1.html")
+                    i.bi.bi-eye.me-1
+                    | Frontend

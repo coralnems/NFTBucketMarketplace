@@ -1,0 +1,74 @@
+doctype html
+html(lang="en", data-theme="dark")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header.pug
+
+        // Breadcrumb 
+        .breadcrumb-wrapper
+            .container
+                .breadcrumb-content
+                    h2.breadcrumb-title Question Details
+                    nav(aria-label="breadcrumb")
+                        ol.breadcrumb.justify-content-center
+                            li.breadcrumb-item
+                                a(href="index.html") Home
+                            li.breadcrumb-item.active(aria-current="page") Question
+
+        .divider
+
+        .help-center-wrapper
+            .container
+                .row.g-5
+                    .col-12.col-lg-8                        
+                        h2.mb-4.fw-bold.display-6 How can I stay safe and protect my NFTs?
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt fuga officia optio vero possimus molestiae voluptatibus nemo assumenda dolores veritatis consequatur provident error suscipit officiis, quo, ut corrupti sequi quos!
+                        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, deleniti expedita, obcaecati repudiandae, saepe quibusdam unde officia tenetur mollitia commodi illo non voluptas consequuntur quod dolorem itaque esse exercitationem ab?
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe deleniti dignissimos vitae neque velit porro sunt ratione enim. Cupiditate corrupti consequatur officiis quae, ducimus sint ipsum quod! Porro, distinctio obcaecati!
+                        img.my-3.rounded(src="img/bg-img/44.jpg", alt="", data-action="zoom")
+                        p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima ipsum porro facere praesentium dolorum nesciunt ratione error omnis, corrupti saepe aspernatur. Cum quia corrupti quasi, fuga ipsa iste ab possimus.
+                        p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur quibusdam, nisi blanditiis dolore suscipit molestiae dicta. Rem unde deserunt ratione iste, ex, perferendis odio voluptates aliquam, tempore debitis quos sed.
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo cum, quam, odit distinctio nesciunt aliquid mollitia soluta consectetur assumenda fugiat non doloribus? Perspiciatis harum, excepturi sequi facilis beatae nostrum vitae.
+
+                        .border-top.my-5
+
+                        .helpful-wrapper.text-center
+                            p Was this article helpful?
+                            .d-flex.align-items-center.justify-content-center.mb-3
+                                a.btn.btn-primary.btn-sm.rounded-pill.mx-2(href="#")
+                                    i.me-1.bi.bi-hand-thumbs-up
+                                    | Yes
+                                a.btn.btn-danger.btn-sm.rounded-pill.mx-2(href="#")
+                                    i.me-1.bi.bi-hand-thumbs-down
+                                    | No
+                            p.mb-0 87 out of 99 found this helpful
+
+                        .card.mt-5.bg-warning.border-0
+                            .card-body.p-4
+                                .d-flex.flex-wrap.align-items-center.justify-content-between
+                                    h6.my-2.text-dark Have more questions?
+                                    a.my-2.btn.btn-sm.btn-dark.rounded-pill(href="contact.html") Submit a request
+
+                    .col-12.col-lg-4
+                        .card.bg-gray.border-0.mt-2
+                            .card-body.p-4
+                                h4.mb-3 Related Questions
+                                .border-top.mb-3
+                                
+                                a.d-block.fz-16.hover-primary.mt-3(href="question-details.html") How do I create an account?
+                                a.d-block.fz-16.hover-primary.mt-3(href="question-details.html") How do I sell an NFT?
+                                a.d-block.fz-16.hover-primary.mt-3(href="question-details.html") How do I create an NFT?
+                                a.d-block.fz-16.hover-primary.mt-3(href="question-details.html") Where can I find NFT sales?
+                                a.d-block.fz-16.hover-primary.mt-3(href="question-details.html") How can I stay safe and protect my NFTs?
+        
+        .divider
+
+        include inc/dark-light-mode.pug
+
+        include inc/footer.pug
+
+        include inc/js-plugins.pug

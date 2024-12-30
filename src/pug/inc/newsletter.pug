@@ -1,0 +1,18 @@
+// Newsletter 
+.container
+    .row.justify-content-center
+        .col-12.col-md-10.col-lg-7
+            .newsletter-card.card.shadow
+                .card-body.p-4.p-sm-5
+                    .text-center
+                        h2 Subscribe to our newsletter
+                        p.mb-5 We will notify you when we are live.
+                    
+                    form(action="#" method="POST")
+                        .row.justify-content-center
+                            .col-12.col-lg-10
+                                input.form-control(type="email" placeholder="Type your mail" aria-describedby="mailHelp")
+                                small#mailHelp.text-muted.text-start
+                                    i.bi.bi-lock.me-1
+                                    | We'll never share your email with anyone else.                    
+                                button.btn.btn-primary.w-100.mt-4.rounded-pill(type="submit") Subscribe Now
