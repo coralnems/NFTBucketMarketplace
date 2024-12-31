@@ -18,7 +18,7 @@ NFT Bunker Marketplace is a decentralized platform designed to empower creators,
 
 ## 🛠️ Technologies Used
 
-- **Blockchain**: Ethereum, Polygon, or [Your Blockchain]
+- **Blockchain**: Ethereum, Polygon SC
 - **Frontend**: React.js, Next.js, Tailwind CSS
 - **Backend**: Node.js, Express.js
 - **Smart Contracts**: Solidity, Hardhat
